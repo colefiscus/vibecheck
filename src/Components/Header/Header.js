@@ -12,7 +12,7 @@ const Header = () => {
 }
 
 const HeaderWrapper = styled.header`
-  background-color: #FFDD00;
+  background-color: #0591B8;
   width: 100%;
   display: flex;
 `;
@@ -23,7 +23,7 @@ const Title = styled.h1`
 
 const Button = styled.button`
   width: 40x;
-  background-color: #C1292E;
+  background-color: #FFDD00;
 
   &:first-of-type {
     margin-left: auto;
