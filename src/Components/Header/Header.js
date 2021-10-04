@@ -16,8 +16,8 @@ const HeaderWrapper = styled.header`
   padding: 0px 16px;
   display: flex;
   align-items: center;
-  height: 50px;
-  gap: 8px;
+  height: 60px;
+  gap: 16px;
 `;
 
 const Title = styled.h1`
@@ -26,8 +26,10 @@ const Title = styled.h1`
 `;
 
 const Button = styled.button`
-  width: 40x;
-  background-color: #FFDD00;
+  padding: 6px 12px;
+  background-color: #FDFFFC;
+  border: 3px outset #474448;
+  border-radius: 8px;
 `;
 
 export default Header;
