@@ -17,7 +17,7 @@ const HeaderWrapper = styled.header`
   display: flex;
   align-items: center;
   height: 60px;
-  gap: 16px;
+  gap: 2px;
 `;
 
 const Title = styled.h1`
@@ -26,10 +26,13 @@ const Title = styled.h1`
 `;
 
 const Button = styled.button`
-  padding: 6px 12px;
+  padding: 10px 12px 4px 12px;
+  font-family: 'Biryani';
+  font-weight: 200;
+  line-height: 1;
   background-color: #FDFFFC;
-  border: 3px outset #474448;
-  border-radius: 8px;
+  border-radius: 8px 8px 0px 0px;
+  align-self: flex-end;
 `;
 
 export default Header;
