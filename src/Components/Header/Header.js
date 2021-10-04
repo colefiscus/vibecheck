@@ -13,21 +13,21 @@ const Header = () => {
 
 const HeaderWrapper = styled.header`
   background-color: #0591B8;
-  width: 100%;
+  padding: 0px 16px;
   display: flex;
+  align-items: center;
+  height: 50px;
+  gap: 8px;
 `;
 
 const Title = styled.h1`
-  font-size: ${22/16}rem;
+  font-size: ${32/16}rem;
+  margin-right: auto;
 `;
 
 const Button = styled.button`
   width: 40x;
   background-color: #FFDD00;
-
-  &:first-of-type {
-    margin-left: auto;
-  }
 `;
 
 export default Header;
