@@ -14,7 +14,7 @@ const Header = () => {
 
 const HeaderWrapper = styled.header`
   background-color: #0591B8;
-  padding: 0px 16px;
+  padding-right: 8px;
   display: flex;
   align-items: center;
   height: 60px;
@@ -23,7 +23,8 @@ const HeaderWrapper = styled.header`
 `;
 
 const Logo = styled.img`
-  width: 275px;
+  max-width: 275px;
+  width: 50%;
   margin-right: auto;
 `;
 
@@ -32,6 +33,7 @@ const Button = styled.button`
   font-family: 'Biryani';
   font-weight: 200;
   line-height: 1;
+  flex-shrink: 0;
   background-color: #FDFFFC;
   border-radius: 8px 8px 0px 0px;
   border-bottom: none;
