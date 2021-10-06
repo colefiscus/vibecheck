@@ -19,7 +19,7 @@ const HeaderWrapper = styled.header`
   align-items: center;
   height: 60px;
   gap: 2px;
-  border-bottom: 3px solid #474448;
+  border-bottom: 3px solid #061826;
 `;
 
 const Logo = styled.img`
