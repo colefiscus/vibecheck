@@ -14,6 +14,7 @@ const PageBottom = styled.footer`
   height: 40px;
   display: flex;
   background-color: #061826;
+  color: #FDFFFC;
   position: absolute;
   bottom: 0;
 `;
