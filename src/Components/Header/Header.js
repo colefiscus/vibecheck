@@ -1,10 +1,11 @@
 import React from 'react';
 import styled from 'styled-components/macro';
+import logo from '../../Images/logo_one.png';
 
 const Header = () => {
   return (
     <HeaderWrapper>
-      <Title>VIBECHECK</Title>
+      <Logo src={logo} />
       <Button>SIGN IN</Button>
       <Button>HELP</Button>
     </HeaderWrapper>
@@ -18,10 +19,11 @@ const HeaderWrapper = styled.header`
   align-items: center;
   height: 60px;
   gap: 2px;
+  border-bottom: 3px solid #474448;
 `;
 
-const Title = styled.h1`
-  font-size: ${32/16}rem;
+const Logo = styled.img`
+  width: 275px;
   margin-right: auto;
 `;
 
@@ -32,6 +34,7 @@ const Button = styled.button`
   line-height: 1;
   background-color: #FDFFFC;
   border-radius: 8px 8px 0px 0px;
+  border-bottom: none;
   align-self: flex-end;
 `;
 
