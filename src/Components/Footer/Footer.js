@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components/macro";
-import liLogo from '../../Images/instagram-logo.png';
+import instagramLogo from '../../Images/instagram-logo.png';
 
 const Footer = () => {
   return (
     <PageBottom>
       <LogoWrapper>
-        <Logo src={liLogo} />
+        <Logo src={instagramLogo} />
       </LogoWrapper>
     </PageBottom>
   )

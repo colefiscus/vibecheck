@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components/macro';
-import mainLogo from '../../Images/logo_one.png';
+import mainLogo from '../../Images/main-logo.png';
 
 const Header = () => {
   return (
