@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components/macro";
-import liLogo from '../../Images/In-White-72.png';
-
+import liLogo from '../../Images/instagram-logo.png';
 
 const Footer = () => {
   return (
@@ -16,23 +15,25 @@ const Footer = () => {
 const PageBottom = styled.footer`
   width: 100%;
   height: 40px;
+  padding: 0px 8px;
   display: flex;
   justify-content: flex-end;
-  background-color: #061826;
+  background-color: #FFDD00;
   color: #FDFFFC;
+  border-top: 3px solid #061826;
   position: absolute;
   bottom: 0;
 `;
 
 const LogoWrapper = styled.div`
-  width: 50px;
+  width: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
 `;
 
 const Logo = styled.img`
-  width: 60%;
+  width: 100%;
 `;
 
 export default Footer;
