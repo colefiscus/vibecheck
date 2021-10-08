@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components/macro';
-import logo from '../../Images/logo_one.png';
+import mainLogo from '../../Images/logo_one.png';
 
 const Header = () => {
   return (
     <HeaderWrapper>
-      <Logo src={logo} />
+      <Logo src={mainLogo} />
       <Button>SIGN IN</Button>
       <Button>HELP</Button>
     </HeaderWrapper>
