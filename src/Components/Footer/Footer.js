@@ -1,12 +1,16 @@
 import React from "react";
 import styled from "styled-components/macro";
 import instagramLogo from '../../Images/instagram-logo.png';
+import ghLogo from '../../Images/github-logo.png';
 
 const Footer = () => {
   return (
     <PageBottom>
       <LogoWrapper>
         <Logo src={instagramLogo} />
+      </LogoWrapper>
+      <LogoWrapper href="https://github.com/colefiscus/vibecheck" target="_blank">
+        <Logo src={ghLogo} />
       </LogoWrapper>
     </PageBottom>
   )
@@ -17,6 +21,7 @@ const PageBottom = styled.footer`
   height: 40px;
   padding: 0px 8px;
   display: flex;
+  gap: 8px;
   justify-content: flex-end;
   background-color: #FFDD00;
   color: #FDFFFC;
@@ -25,7 +30,7 @@ const PageBottom = styled.footer`
   bottom: 0;
 `;
 
-const LogoWrapper = styled.div`
+const LogoWrapper = styled.a`
   width: 30px;
   display: flex;
   align-items: center;
