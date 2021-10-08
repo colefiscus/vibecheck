@@ -7,7 +7,8 @@ const Header = () => {
     <HeaderWrapper>
       <Logo src={mainLogo} />
       <Button>SIGN IN</Button>
-      <Button>HELP</Button>
+      <Button>FAQs</Button>
+      <Button>CONTACT</Button>
     </HeaderWrapper>
   )
 }
