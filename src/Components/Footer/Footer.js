@@ -6,7 +6,7 @@ import ghLogo from '../../Images/github-logo.png';
 const Footer = () => {
   return (
     <PageBottom>
-      <LogoWrapper>
+      <LogoWrapper href="https://www.instagram.com/negative2to7" target="_blank">
         <Logo src={instagramLogo} />
       </LogoWrapper>
       <LogoWrapper href="https://github.com/colefiscus/vibecheck" target="_blank">
