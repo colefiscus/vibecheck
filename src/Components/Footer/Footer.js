@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components/macro";
 import instagramLogo from '../../Images/instagram-logo.png';
 import ghLogo from '../../Images/github-logo.png';
-import smallLogo from '../../Images/small-logo.png';
+import smallLogo from '../../Images/small-logo-dark.png';
 
 const Footer = () => {
   return (
