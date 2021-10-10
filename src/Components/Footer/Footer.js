@@ -26,7 +26,7 @@ const PageBottom = styled.footer`
   padding: 0px 8px;
   display: flex;
   gap: 8px;
-  justify-content: flex-end;
+  justify-content: flex-start;
   background-color: #FFDD00;
   color: #FDFFFC;
   border-top: 3px solid #061826;
@@ -39,6 +39,10 @@ const LogoWrapper = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &:first-of-type {
+    margin-right: auto;
+  }
 `;
 
 const Logo = styled.img`
