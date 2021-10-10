@@ -2,10 +2,14 @@ import React from "react";
 import styled from "styled-components/macro";
 import instagramLogo from '../../Images/instagram-logo.png';
 import ghLogo from '../../Images/github-logo.png';
+import smallLogo from '../../Images/small-logo.png';
 
 const Footer = () => {
   return (
     <PageBottom>
+      <LogoWrapper href="https://www.instagram.com/negative2to7" target="_blank">
+        <Logo src={smallLogo} />
+      </LogoWrapper>
       <LogoWrapper href="https://www.instagram.com/negative2to7" target="_blank">
         <Logo src={instagramLogo} />
       </LogoWrapper>
