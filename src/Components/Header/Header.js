@@ -1,14 +1,23 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 import mainLogo from '../../Images/main-logo.png';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
   return (
     <HeaderWrapper>
-      <Logo src={mainLogo} />
-      <Button>SIGN IN</Button>
-      <Button>FAQs</Button>
-      <Button>CONTACT</Button>
+      <HeaderLink to="/">
+        <Logo src={mainLogo} />
+      </HeaderLink>
+      <HeaderLink to="/sign-in">
+        <Button>SIGN IN</Button>
+      </HeaderLink>
+      <HeaderLink to="faqs">
+        <Button>FAQs</Button>
+      </HeaderLink>
+      <HeaderLink to="/contact">
+        <Button>CONTACT</Button>
+      </HeaderLink>
     </HeaderWrapper>
   )
 }
@@ -23,10 +32,18 @@ const HeaderWrapper = styled.header`
   border-bottom: 3px solid #061826;
 `;
 
+const HeaderLink = styled(NavLink)`
+  align-self: flex-end;
+
+  &:first-of-type {
+    margin-right: auto;
+    align-self: center;
+  }
+`;
+
 const Logo = styled.img`
   max-width: 275px;
-  width: 50%;
-  margin-right: auto;
+  width: 100%;
 `;
 
 const Button = styled.button`
