@@ -3,14 +3,14 @@ import styled from "styled-components/macro";
 
 const Contact = () => {
   return (
-    <Wrapper>
+    <ContactWrapper>
       <h1>THIS IS CONTACT</h1>
-    </Wrapper>
+    </ContactWrapper>
   )
 }
 
-const Wrapper = styled.main`
-  
+const ContactWrapper = styled.main`
+
 `;
 
 export default Contact;
