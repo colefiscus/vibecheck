@@ -8,6 +8,10 @@ function App() {
   return (
     <div>
       <Header />
+      <Switch>
+        <Route exact path="/" component={Home}></Route>
+        <Route exact path="/contact" component={Contact}></Route>
+      </Switch>
       <Footer />
       <GlobalStyles />
     </div>
