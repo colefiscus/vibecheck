@@ -7,7 +7,7 @@ import smallLogo from '../../Images/small-logo-dark.png';
 const Footer = () => {
   return (
     <PageBottom>
-      <LogoWrapper href="https://www.instagram.com/negative2to7" target="_blank">
+      <LogoWrapper>
         <Logo src={smallLogo} />
       </LogoWrapper>
       <LogoWrapper href="https://www.instagram.com/negative2to7" target="_blank">
