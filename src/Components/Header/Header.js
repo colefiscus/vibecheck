@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components/macro';
 import mainLogo from '../../Images/main-logo.png';
 import { NavLink } from 'react-router-dom';
+import LoginButton from '../Auth0/LoginButton';
 
 const Header = () => {
   return (
@@ -10,7 +11,7 @@ const Header = () => {
         <Logo src={mainLogo} />
       </HeaderLink>
       <HeaderLink to="/sign-in">
-        <Button>SIGN IN</Button>
+        <LoginButton />
       </HeaderLink>
       <HeaderLink to="faqs">
         <Button>FAQs</Button>
@@ -56,6 +57,7 @@ const Button = styled.button`
   border-radius: 8px 8px 0px 0px;
   border-bottom: none;
   align-self: flex-end;
+  cursor: pointer;
 `;
 
 export default Header;
