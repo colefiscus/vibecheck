@@ -11,7 +11,7 @@ const Header = () => {
       <HeaderLink to="/">
         <Logo src={mainLogo} />
       </HeaderLink>
-      <HeaderLink to="/sign-in">
+      <HeaderLink to="/sign-out">
         <LogoutButton />
       </HeaderLink>
       <HeaderLink to="/sign-in">
