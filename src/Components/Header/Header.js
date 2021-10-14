@@ -4,26 +4,38 @@ import mainLogo from '../../Images/main-logo.png';
 import { NavLink } from 'react-router-dom';
 import LoginButton from '../Auth0/LoginButton';
 import LogoutButton from '../Auth0/LogoutButton';
+import { useAuth0 } from '@auth0/auth0-react';
 
 const Header = () => {
-  return (
-    <HeaderWrapper>
-      <HeaderLink to="/">
-        <Logo src={mainLogo} />
-      </HeaderLink>
-      <HeaderLink to="/sign-out">
-        <LogoutButton />
-      </HeaderLink>
-      <HeaderLink to="/sign-in">
-        <LoginButton />
-      </HeaderLink>
-      <HeaderLink to="faqs">
-        <Button>FAQs</Button>
-      </HeaderLink>
-      <HeaderLink to="/contact">
-        <Button>CONTACT</Button>
-      </HeaderLink>
-    </HeaderWrapper>
+
+  const { user, isAuthenticated, isLoading } = useAuth0();
+
+  if (isLoading) {
+    return <p>Loading...</p>
+  }
+
+  return ((
+      <HeaderWrapper>
+        <HeaderLink to="/">
+          <Logo src={mainLogo} />
+        </HeaderLink>
+        <HeaderLink to="/sign-out">
+          <LogoutButton />
+        </HeaderLink>
+        <HeaderLink to="/sign-in">
+          <LoginButton />
+        </HeaderLink>
+        <HeaderLink to="faqs">
+          <Button>FAQs</Button>
+        </HeaderLink>
+        <HeaderLink to="/contact">
+          <Button>CONTACT</Button>
+        </HeaderLink>
+        <h2>{user.name}</h2>
+        <p>{user.email}</p>
+        <img src={user.picture} alt={user.name} />
+      </HeaderWrapper>
+    )
   )
 }
 
