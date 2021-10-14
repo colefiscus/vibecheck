@@ -4,11 +4,8 @@ import mainLogo from '../../Images/main-logo.png';
 import { NavLink } from 'react-router-dom';
 import LoginButton from '../Auth0/LoginButton';
 import LogoutButton from '../Auth0/LogoutButton';
-import { useAuth0 } from '@auth0/auth0-react';
 
 const Header = () => {
-
-  const { user, isAuthenticated, isLoading } = useAuth0();
 
   if (isLoading) {
     return <p>Loading...</p>
@@ -31,9 +28,6 @@ const Header = () => {
         <HeaderLink to="/contact">
           <Button>CONTACT</Button>
         </HeaderLink>
-        <h2>{user.name}</h2>
-        <p>{user.email}</p>
-        <img src={user.picture} alt={user.name} />
       </HeaderWrapper>
     )
   )
