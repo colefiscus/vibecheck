@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div>
-      <Header />
+      <Header user={user} isAuthenticated={isAuthenticated} isLoading={isLoading} />
       <Switch>
         <Route exact path="/" component={Home}></Route>
         <Route exact path="/contact" component={Contact}></Route>
