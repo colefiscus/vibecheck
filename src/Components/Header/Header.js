@@ -6,11 +6,6 @@ import LoginButton from '../Auth0/LoginButton';
 import LogoutButton from '../Auth0/LogoutButton';
 
 const Header = () => {
-
-  if (isLoading) {
-    return <p>Loading...</p>
-  }
-
   return ((
       <HeaderWrapper>
         <HeaderLink to="/">
