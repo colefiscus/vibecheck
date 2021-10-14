@@ -22,7 +22,7 @@ const Header = ({ user, isAuthenticated, isLoading }) => {
                                 <LoginButton />
                               </HeaderLink>}
         {isAuthenticated && <HeaderLink to="/sign-out">
-                              <LogoutButton />
+                              <Logo src={user.picture} alt={user.name} />
                             </HeaderLink>}
       </HeaderWrapper>
     )
