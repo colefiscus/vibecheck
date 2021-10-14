@@ -6,8 +6,12 @@ import Contact from './Views/Contact';
 import Faqs from './Views/Faqs';
 import GlobalStyles from './GlobalStyles';
 import { Switch, Route } from 'react-router-dom';
+import { useAuth0 } from '@auth0/auth0-react';
 
 function App() {
+
+  const { user, isAuthenticated, isLoading } = useAuth0();
+
   return (
     <div>
       <Header />
