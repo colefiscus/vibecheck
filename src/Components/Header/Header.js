@@ -17,6 +17,7 @@ const Header = ({ user, isAuthenticated, isLoading }) => {
         <HeaderLink to="/contact">
           <Button>CONTACT</Button>
         </HeaderLink>
+        {isLoading && <h2>Loading.....</h2>}
         {!isAuthenticated &&  <HeaderLink to="/sign-in">
                                 <LoginButton />
                               </HeaderLink>}
