@@ -5,17 +5,11 @@ import { NavLink } from 'react-router-dom';
 import LoginButton from '../Auth0/LoginButton';
 import LogoutButton from '../Auth0/LogoutButton';
 
-const Header = () => {
+const Header = ({ user, isAuthenticated, isLoading }) => {
   return ((
       <HeaderWrapper>
         <HeaderLink to="/">
           <Logo src={mainLogo} />
-        </HeaderLink>
-        <HeaderLink to="/sign-out">
-          <LogoutButton />
-        </HeaderLink>
-        <HeaderLink to="/sign-in">
-          <LoginButton />
         </HeaderLink>
         <HeaderLink to="faqs">
           <Button>FAQs</Button>
@@ -23,6 +17,12 @@ const Header = () => {
         <HeaderLink to="/contact">
           <Button>CONTACT</Button>
         </HeaderLink>
+        {!isAuthenticated &&  <HeaderLink to="/sign-in">
+                                <LoginButton />
+                              </HeaderLink>}
+        {isAuthenticated && <HeaderLink to="/sign-out">
+                              <LogoutButton />
+                            </HeaderLink>}
       </HeaderWrapper>
     )
   )
