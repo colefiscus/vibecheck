@@ -5,10 +5,11 @@ import LogoutButton from "../Components/Auth0/LogoutButton";
 
 const Profile = ({ user, isAuthenticated, isLoading }) => {
   return (
-    <main>
-      <h2>THIS IS PROFILE</h2>
-      <LogoutButton>Log Out...</LogoutButton>
-    </main>
+    isAuthenticated && <main>
+        <h2>THIS IS {user.given_name.toUpperCase()}'S PROFILE</h2>
+        <img src={user.picture} alt={user.name} />
+        <LogoutButton>Log Out...</LogoutButton>
+      </main>
   )
 }
 
