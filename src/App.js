@@ -13,7 +13,7 @@ function App() {
   const { user, isAuthenticated, isLoading } = useAuth0();
 
   return (
-    <div>
+    <>
       <Header user={user} isAuthenticated={isAuthenticated} isLoading={isLoading} />
       <Switch>
         <Route exact path="/" component={Home}></Route>
@@ -22,7 +22,7 @@ function App() {
       </Switch>
       <Footer />
       <GlobalStyles />
-    </div>
+    </>
   );
 }
 
