@@ -8,7 +8,7 @@ const Profile = ({ user, isAuthenticated }) => {
     isAuthenticated && <MainWrapper>
         <h2>{user.given_name.toUpperCase()}'S PROFILE</h2>
         <ImageWrapper>
-          <img src={user.picture} alt={user.name} />
+          <img src={user.picture} alt={user.name} style={{ "width": "100%" }} />
         </ImageWrapper>
         <LogoutButton>Log Out...</LogoutButton>
       </MainWrapper>
@@ -16,12 +16,15 @@ const Profile = ({ user, isAuthenticated }) => {
 }
 
 const MainWrapper = styled.main`
+  padding: 30px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `;
 
 const ImageWrapper = styled.div`
-  width: 300px;
+  width: 100px;
 `;
 
 export default Profile;

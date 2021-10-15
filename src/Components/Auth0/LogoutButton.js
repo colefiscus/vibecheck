@@ -21,7 +21,6 @@ flex-shrink: 0;
 background-color: #FDFFFC;
 border-radius: 8px 8px 0px 0px;
 border-bottom: none;
-align-self: flex-end;
 cursor: pointer;
 `;
 
