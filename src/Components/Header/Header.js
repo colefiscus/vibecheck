@@ -21,8 +21,8 @@ const Header = ({ user, isAuthenticated, isLoading }) => {
         {!isAuthenticated &&  <HeaderLink to="/sign-in">
                                 <LoginButton />
                               </HeaderLink>}
-        {isAuthenticated && <HeaderLink to="/sign-out">
-                              <Logo src={user.picture} alt={user.name} />
+        {isAuthenticated && <HeaderLink to="/profile">
+                              <Button>PROFILE</Button>
                             </HeaderLink>}
       </HeaderWrapper>
     )
