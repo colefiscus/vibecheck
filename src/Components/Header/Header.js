@@ -4,7 +4,7 @@ import mainLogo from '../../Images/main-logo.png';
 import { NavLink } from 'react-router-dom';
 import LoginButton from '../Auth0/LoginButton';
 
-const Header = ({ user, isAuthenticated, isLoading }) => {
+const Header = ({ isAuthenticated, isLoading }) => {
   return ((
       <HeaderWrapper>
         <HeaderLink to="/">
