@@ -15,16 +15,16 @@ function App() {
 
   return (
     <>
-      <Header user={user} isAuthenticated={isAuthenticated} isLoading={isLoading} />
+      <Header isAuthenticated={isAuthenticated} />
       <Switch>
         <Route exact path="/" component={Home}></Route>
         <Route exact path="/contact" component={Contact}></Route>
         <Route exact path="/faqs" component={Faqs}></Route>
-        <Route exact path="/profile" render={() => <Profile
-          user={user}
-          isAuthenticated={isAuthenticated}
-          isLoading={isLoading}
-          />}>
+        <Route exact path="/profile" render={() => {
+          return <Profile user={user}
+                          isAuthenticated={isAuthenticated} /> 
+          }} 
+        >
         </Route>
       </Switch>
       <Footer />

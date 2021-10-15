@@ -3,7 +3,7 @@ import styled from "styled-components/macro";
 
 import LogoutButton from "../Components/Auth0/LogoutButton";
 
-const Profile = ({ user, isAuthenticated, isLoading }) => {
+const Profile = ({ user, isAuthenticated }) => {
   return (
     isAuthenticated && <MainWrapper>
         <h2>{user.given_name.toUpperCase()}'S PROFILE</h2>
