@@ -7,7 +7,9 @@ const Profile = ({ user, isAuthenticated }) => {
   return (
     isAuthenticated && <MainWrapper>
         <h2>{user.given_name.toUpperCase()}'S PROFILE</h2>
-        <img src={user.picture} alt={user.name} />
+        <ImageWrapper>
+          <img src={user.picture} alt={user.name} />
+        </ImageWrapper>
         <LogoutButton>Log Out...</LogoutButton>
       </MainWrapper>
   )
@@ -16,6 +18,10 @@ const Profile = ({ user, isAuthenticated }) => {
 const MainWrapper = styled.main`
   display: flex;
   flex-direction: column;
+`;
+
+const ImageWrapper = styled.div`
+  width: 300px;
 `;
 
 export default Profile;
