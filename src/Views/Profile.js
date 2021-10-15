@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components/macro";
 
-const Profile = () => {
+const Profile = ({ user, isAuthenticated, isLoading }) => {
   return (
     <main>
-      
+
     </main>
   )
 }
