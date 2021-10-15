@@ -3,7 +3,6 @@ import styled from 'styled-components/macro';
 import mainLogo from '../../Images/main-logo.png';
 import { NavLink } from 'react-router-dom';
 import LoginButton from '../Auth0/LoginButton';
-import LogoutButton from '../Auth0/LogoutButton';
 
 const Header = ({ user, isAuthenticated, isLoading }) => {
   return ((
