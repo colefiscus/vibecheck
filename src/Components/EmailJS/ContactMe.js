@@ -12,10 +12,10 @@ const ContactMe = () => {
   const onSubmit = (event) => {
     event.preventDefault();
     send(
-      'user_kSU4A4CIGbdNQtHJZBCs5',
-      'TEMPLATE ID',
+      'service_8r1wilv',
+      'template_plsfqif',
       toSend,
-      'User ID'
+      'user_kSU4A4CIGbdNQtHJZBCs5'
     )
       .then((response) => {
         console.log('Success!', response.status, response.text);
