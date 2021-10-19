@@ -17,6 +17,7 @@ const Contact = () => {
       </TextWrapper>
       <TextWrapper>
         <h2>CONTACT</h2>
+        <p>Have a suggestion for VibeCheck? Send me your ideas!</p>
         <ContactMe />
       </TextWrapper>
     </ContactWrapper>
