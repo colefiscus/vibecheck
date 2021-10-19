@@ -11,6 +11,18 @@ const ContactMe = () => {
 
   const onSubmit = (event) => {
     event.preventDefault();
+    send(
+      'user_kSU4A4CIGbdNQtHJZBCs5',
+      'TEMPLATE ID',
+      toSend,
+      'User ID'
+    )
+      .then((response) => {
+        console.log('Success!', response.status, response.text);
+      })
+      .catch((err) => {
+        console.log('Failed...', err)
+      })
   }
 
   const handleChange = (event) => {
