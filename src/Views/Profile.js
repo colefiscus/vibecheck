@@ -10,7 +10,7 @@ const Profile = ({ user, isAuthenticated }) => {
         <ImageWrapper>
           <img src={user.picture} alt={user.name} style={{ "width": "100%" }} />
         </ImageWrapper>
-        <LogoutButton>Log Out...</LogoutButton>
+        <LogoutButton />
       </MainWrapper>
   )
 }
