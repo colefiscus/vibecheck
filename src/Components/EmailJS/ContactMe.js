@@ -2,8 +2,20 @@ import React, { useState } from 'react';
 import { send } from 'emailjs-com';
 
 const ContactMe = () => {
+  const [toSend, setToSend] = useState({
+    from_name: '',
+    to_name: '',
+    message: '',
+    reply_to: ''
+  });
 
-  
+  const onSubmit = (event) => {
+    event.preventDefault();
+  }
+
+  const handleChange = (event) => {
+    setToSend({ ...toSend, [event.target.name]: event.target.value });
+  }
 
   return (
     <form onSubmit={onSubmit}>
