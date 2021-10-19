@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components/macro";
 
+import ContactMe from "../Components/EmailJS/ContactMe";
+
 const Contact = () => {
   return (
     <ContactWrapper>
@@ -15,6 +17,7 @@ const Contact = () => {
       </TextWrapper>
       <TextWrapper>
         <h2>CONTACT</h2>
+        <ContactMe />
       </TextWrapper>
     </ContactWrapper>
   )
