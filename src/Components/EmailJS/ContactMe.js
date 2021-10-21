@@ -44,7 +44,7 @@ const ContactMe = () => {
         <Input
           type="text"
           name="message"
-          placeholder="Your subject"
+          placeholder="Your message"
           value={toSend.message}
           onChange={handleChange} 
         />
