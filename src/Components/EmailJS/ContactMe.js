@@ -140,7 +140,7 @@ const Select = styled.select`
   flex: 3;
   font-size: ${18/14}rem;
   font-family: inherit;
-  font-weight: 400;
+  font-weight: 600;
   color: hsl(0, 0%, 0%);
 `;
 
@@ -152,6 +152,7 @@ const EmailArea = styled.textarea`
   font-weight: 600;
   color: hsl(0, 0%, 0%);
   resize: none;
+  overflow: auto;
 
   &::placeholder {
     font-weight: 400;
