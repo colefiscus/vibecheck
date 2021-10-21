@@ -43,7 +43,7 @@ const ContactMe = () => {
   return (
     <Form onSubmit={onSubmit}>
       <InputWrapper>
-        <Label>Your Name*:</Label>
+        <Label>Your Name*</Label>
         <Input 
           required
           type="text"
@@ -54,7 +54,7 @@ const ContactMe = () => {
         />
       </InputWrapper>
       <InputWrapper>
-        <Label htmlFor="subject-select">Subject*:</Label>
+        <Label htmlFor="subject-select">Subject*</Label>
         <Select 
           required
           id="subject-select" 
@@ -69,7 +69,7 @@ const ContactMe = () => {
         </Select>
       </InputWrapper>
       <InputWrapper>
-        <Label>Your Message*:</Label>
+        <Label>Your Message*</Label>
         <EmailArea
           required
           rows="7"
@@ -81,7 +81,7 @@ const ContactMe = () => {
         />
       </InputWrapper>
       <InputWrapper>
-        <Label>Your Email*:</Label>
+        <Label>Your Email*</Label>
         <Input
           required
           type="email"
@@ -100,6 +100,7 @@ const Form = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: 'Prozo Libre';
 `;
 
 
@@ -108,6 +109,7 @@ const Label = styled.label`
   font-size: ${18/14}rem;
   font-style: italic;
   width: 300px;
+  margin-right: 6px;
   flex: 1;
   text-align: right;
 `;
@@ -123,10 +125,12 @@ const Input = styled.input`
   flex: 3;
   // max-width: 400px;
   font-size: ${18/14}rem;
-  font-family: 'Telex';
+  font-family: inherit;
+  font-weight: 600;
   color: hsl(0, 0%, 0%);
 
   &::placeholder {
+    font-weight: 400;
     color: hsl(0, 0%, 60%);
   }
 `;
@@ -135,7 +139,8 @@ const Select = styled.select`
   margin: 8px 0px;
   flex: 3;
   font-size: ${18/14}rem;
-  font-family: 'Telex';
+  font-family: inherit;
+  font-weight: 400;
   color: hsl(0, 0%, 0%);
 `;
 
@@ -143,11 +148,13 @@ const EmailArea = styled.textarea`
   margin: 8px 0px;
   flex: 3;
   font-size: ${18/14}rem;
-  font-family: 'Telex';
+  font-family: inherit;
+  font-weight: 600;
   color: hsl(0, 0%, 0%);
   resize: none;
 
   &::placeholder {
+    font-weight: 400;
     color: hsl(0, 0%, 60%);
   }
 `;
