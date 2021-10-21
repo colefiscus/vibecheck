@@ -5,7 +5,6 @@ import styled from 'styled-components';
 const ContactMe = () => {
   const [toSend, setToSend] = useState({
     from_name: '',
-    to_name: '',
     message: '',
     reply_to: ''
   });
@@ -33,7 +32,7 @@ const ContactMe = () => {
   return (
     <Form onSubmit={onSubmit}>
       <InputWrapper>
-        <input 
+        <Input 
           name="from_name"
           placeholder="from name"
           value={toSend.from_name}
@@ -41,15 +40,7 @@ const ContactMe = () => {
         />
       </InputWrapper>
       <InputWrapper>
-        <input 
-          name="to_name"
-          placeholder="to name"
-          value={toSend.to_name}
-          onChange={handleChange} 
-        />
-      </InputWrapper>
-      <InputWrapper>
-        <input 
+        <Input 
           name="message"
           placeholder="Your message"
           value={toSend.message}
@@ -57,7 +48,7 @@ const ContactMe = () => {
         />
       </InputWrapper>
       <InputWrapper>
-        <input 
+        <Input 
           name="reply_to"
           placeholder="Your email"
           value={toSend.reply_to}
@@ -74,7 +65,12 @@ const Form = styled.form`
 `;
 
 const InputWrapper = styled.div`
-  border: 3px solid deeppink;
+  
+`;
+
+const Input = styled.input`
+  margin: 8px 0px;
+  width: 100%;
 `;
 
 export default ContactMe;
