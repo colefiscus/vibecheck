@@ -3,10 +3,14 @@ import styled from "styled-components/macro";
 
 const Faqs = () => {
   return (
-    <main>
+    <FaqsWrapper>
       <h1>THIS IS FAQS</h1>
-    </main>
+    </FaqsWrapper>
   )
 }
+
+const FaqsWrapper = styled.main`
+
+`;
 
 export default Faqs;

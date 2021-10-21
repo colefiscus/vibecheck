@@ -3,10 +3,14 @@ import styled from "styled-components/macro";
 
 const Home = () => {
   return (
-    <main>
+    <HomeWrapper>
       <h1>THIS IS HOME</h1>
-    </main>
+    </HomeWrapper>
   )
 }
+
+const HomeWrapper = styled.main`
+
+`;
 
 export default Home;

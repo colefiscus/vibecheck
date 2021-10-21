@@ -13,6 +13,12 @@ function App() {
 
   const { user, isAuthenticated, isLoading } = useAuth0();
 
+  if (isLoading) {
+    return (
+      <h2>Currently Loading.....</h2>
+    )
+  }
+
   return (
     <>
       <Header isAuthenticated={isAuthenticated} />
