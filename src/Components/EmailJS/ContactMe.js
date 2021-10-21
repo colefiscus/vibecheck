@@ -34,7 +34,7 @@ const ContactMe = () => {
       <InputWrapper>
         <Input 
           name="from_name"
-          placeholder="from name"
+          placeholder="Your name"
           value={toSend.from_name}
           onChange={handleChange} 
         />
