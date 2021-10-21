@@ -43,16 +43,17 @@ const ContactMe = () => {
   return (
     <Form onSubmit={onSubmit}>
       <InputWrapper>
+        <Label>Your Name: </Label>
         <Input 
           type="text"
           name="from_name"
-          placeholder="Your name"
+          placeholder="Terd Ferguson"
           value={toSend.from_name}
           onChange={handleChange} 
         />
       </InputWrapper>
       <InputWrapper>
-        <Label htmlFor="subject-select">Please choose a subject: </Label>
+        <Label htmlFor="subject-select">Subject: </Label>
         <select 
           id="subject-select" 
           name="subject" 
@@ -66,19 +67,21 @@ const ContactMe = () => {
         </select>
       </InputWrapper>
       <InputWrapper>
+        <Label>Your Message: </Label>
         <Input
           type="text"
           name="message"
-          placeholder="Your message"
+          placeholder="RIP to the great Norm Macdonald"
           value={toSend.message}
           onChange={handleChange} 
         />
       </InputWrapper>
       <InputWrapper>
+        <Label>Your Email: </Label>
         <Input
           type="email"
           name="reply_to"
-          placeholder="Your email"
+          placeholder="podiatrist@mothmail.com"
           value={toSend.reply_to}
           onChange={handleChange} 
         />
