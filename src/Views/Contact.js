@@ -27,6 +27,9 @@ const Contact = () => {
 const ContactWrapper = styled.main`
   display: flex;
   justify-content: center;
+  font-family: 'Josefin Slab';
+  font-weight: 200;
+  font-size: ${22/14}rem;
 `;
 
 const SectionWrapper = styled.section`

@@ -105,6 +105,8 @@ const InputWrapper = styled.div`
 
 const Label = styled.label`
   font-family: 'Josefin Slab';
+  font-weight: 100;
+  font-style: italic;
   font-size: ${16/14}rem;
 `;
 
