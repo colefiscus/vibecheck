@@ -24,6 +24,16 @@ const ContactMe = () => {
       .catch((err) => {
         console.log('Failed...', err)
       })
+    clearInputs();
+  }
+
+  const clearInputs = () => {
+    setToSend({
+      subject: '',
+      from_name: '',
+      message: '',
+      reply_to: ''
+    })
   }
 
   const handleChange = (event) => {
@@ -42,7 +52,7 @@ const ContactMe = () => {
         />
       </InputWrapper>
       <InputWrapper>
-        <label for="subject-select">Please choose a subject:</label>
+        <label htmlFor="subject-select">Please choose a subject:</label>
         <select 
           id="subject-select" 
           name="subject" 
