@@ -33,6 +33,7 @@ const ContactMe = () => {
     <Form onSubmit={onSubmit}>
       <InputWrapper>
         <Input 
+          type="text"
           name="from_name"
           placeholder="Your name"
           value={toSend.from_name}
@@ -40,15 +41,17 @@ const ContactMe = () => {
         />
       </InputWrapper>
       <InputWrapper>
-        <Input 
+        <Input
+          type="text"
           name="message"
-          placeholder="Your message"
+          placeholder="Your subject"
           value={toSend.message}
           onChange={handleChange} 
         />
       </InputWrapper>
       <InputWrapper>
-        <Input 
+        <Input
+          type="email"
           name="reply_to"
           placeholder="Your email"
           value={toSend.reply_to}
