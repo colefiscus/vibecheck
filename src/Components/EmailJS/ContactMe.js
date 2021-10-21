@@ -45,6 +45,7 @@ const ContactMe = () => {
       <InputWrapper>
         <Label>Your Name: </Label>
         <Input 
+          required
           type="text"
           name="from_name"
           placeholder="Terd Ferguson"
@@ -55,6 +56,7 @@ const ContactMe = () => {
       <InputWrapper>
         <Label htmlFor="subject-select">Subject: </Label>
         <select 
+          required
           id="subject-select" 
           name="subject" 
           value={toSend.subject} 
@@ -69,6 +71,7 @@ const ContactMe = () => {
       <InputWrapper>
         <Label>Your Message: </Label>
         <Input
+          required
           type="text"
           name="message"
           placeholder="RIP to the great Norm Macdonald"
@@ -79,6 +82,7 @@ const ContactMe = () => {
       <InputWrapper>
         <Label>Your Email: </Label>
         <Input
+          required
           type="email"
           name="reply_to"
           placeholder="podiatrist@mothmail.com"
