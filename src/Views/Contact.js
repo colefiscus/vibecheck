@@ -6,7 +6,7 @@ import ContactMe from "../Components/EmailJS/ContactMe";
 const Contact = () => {
   return (
     <ContactWrapper>
-      <TextWrapper>
+      <SectionWrapper>
         <h2>ABOUT</h2>
         <h3>Cole Fiscus</h3>
         <p>The developer is a major foodie.</p>
@@ -14,12 +14,12 @@ const Contact = () => {
         <p>He also thinks the rating system used here is simultaneously ridiculous and fantastic.</p>
         <p>He would give it a 6/7.</p>
         <p></p>
-      </TextWrapper>
-      <TextWrapper>
+      </SectionWrapper>
+      <SectionWrapper>
         <h2>CONTACT</h2>
         <p>Have a suggestion for VibeCheck? Send me your ideas!</p>
         <ContactMe />
-      </TextWrapper>
+      </SectionWrapper>
     </ContactWrapper>
   )
 }
@@ -29,7 +29,7 @@ const ContactWrapper = styled.main`
   justify-content: center;
 `;
 
-const TextWrapper = styled.div`
+const SectionWrapper = styled.section`
   margin: 0px 25px;
 `;
 
