@@ -43,7 +43,7 @@ const ContactMe = () => {
   return (
     <Form onSubmit={onSubmit}>
       <InputWrapper>
-        <Label>Your Name: </Label>
+        <Label>Your Name*:</Label>
         <Input 
           required
           type="text"
@@ -54,7 +54,7 @@ const ContactMe = () => {
         />
       </InputWrapper>
       <InputWrapper>
-        <Label htmlFor="subject-select">Subject: </Label>
+        <Label htmlFor="subject-select">Subject*:</Label>
         <Select 
           required
           id="subject-select" 
@@ -69,18 +69,17 @@ const ContactMe = () => {
         </Select>
       </InputWrapper>
       <InputWrapper>
-        <Label>Your Message: </Label>
-        <Input
+        <Label>Your Message*:</Label>
+        <EmailArea
           required
-          type="text"
           name="message"
           placeholder="RIP to the great Norm Macdonald"
           value={toSend.message}
-          onChange={handleChange} 
+          onChange={handleChange}
         />
       </InputWrapper>
       <InputWrapper>
-        <Label>Your Email: </Label>
+        <Label>Your Email*:</Label>
         <Input
           required
           type="email"
@@ -96,7 +95,6 @@ const ContactMe = () => {
 }
 
 const Form = styled.form`
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -107,6 +105,7 @@ const Label = styled.label`
   font-family: 'Josefin Slab';
   font-size: ${18/14}rem;
   font-style: italic;
+  width: 300px;
   flex: 1;
   text-align: right;
 `;
@@ -115,13 +114,12 @@ const InputWrapper = styled.div`
   display: flex;
   width: 100%;
   align-items: baseline;
-  justify-content: center;
 `;
 
 const Input = styled.input`
   margin: 8px 0px;
-  flex: 4;
-  max-width: 400px;
+  flex: 3;
+  // max-width: 400px;
   font-size: ${18/14}rem;
   font-family: 'Telex';
   color: hsl(0, 0%, 0%);
@@ -133,8 +131,15 @@ const Input = styled.input`
 
 const Select = styled.select`
   margin: 8px 0px;
-  flex: 4;
-  max-width: 400px;
+  flex: 3;
+  font-size: ${18/14}rem;
+  font-family: 'Telex';
+  color: hsl(0, 0%, 0%);
+`;
+
+const EmailArea = styled.textarea`
+  margin: 8px 0px;
+  flex: 3;
   font-size: ${18/14}rem;
   font-family: 'Telex';
   color: hsl(0, 0%, 0%);
