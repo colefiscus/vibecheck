@@ -72,6 +72,8 @@ const ContactMe = () => {
         <Label>Your Message*:</Label>
         <EmailArea
           required
+          rows="7"
+          cols="30"
           name="message"
           placeholder="RIP to the great Norm Macdonald"
           value={toSend.message}
@@ -143,6 +145,7 @@ const EmailArea = styled.textarea`
   font-size: ${18/14}rem;
   font-family: 'Telex';
   color: hsl(0, 0%, 0%);
+  resize: none;
 
   &::placeholder {
     color: hsl(0, 0%, 60%);
