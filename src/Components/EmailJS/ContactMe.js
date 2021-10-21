@@ -109,7 +109,7 @@ const Label = styled.label`
   font-size: ${18/14}rem;
   font-style: italic;
   width: 300px;
-  margin-right: 6px;
+  margin-right: 8px;
   flex: 1;
   text-align: right;
 `;
@@ -123,11 +123,17 @@ const InputWrapper = styled.div`
 const Input = styled.input`
   margin: 8px 0px;
   flex: 3;
-  // max-width: 400px;
   font-size: ${18/14}rem;
   font-family: inherit;
   font-weight: 600;
   color: hsl(0, 0%, 0%);
+  border-radius: 8px;
+  padding: 12px 16px;
+  border: none;
+
+  &:focus {
+    outline: 1px dotted #212121;
+  }
 
   &::placeholder {
     font-weight: 400;
@@ -142,6 +148,13 @@ const Select = styled.select`
   font-family: inherit;
   font-weight: 600;
   color: hsl(0, 0%, 0%);
+  border-radius: 8px;
+  padding: 12px 16px;
+  border: none;
+
+  &:focus {
+    outline: 1px dotted #212121;
+  }
 `;
 
 const EmailArea = styled.textarea`
@@ -153,6 +166,13 @@ const EmailArea = styled.textarea`
   color: hsl(0, 0%, 0%);
   resize: none;
   overflow: auto;
+  border-radius: 8px;
+  padding: 12px 16px;
+  border: none;
+
+  &:focus {
+    outline: 1px dotted #212121;
+  }
 
   &::placeholder {
     font-weight: 400;
