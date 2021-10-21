@@ -101,6 +101,7 @@ const Form = styled.form`
   flex-direction: column;
   align-items: center;
   font-family: 'Prozo Libre';
+  margin: 10px 0px;
 `;
 
 

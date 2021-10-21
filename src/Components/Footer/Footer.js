@@ -30,7 +30,7 @@ const PageBottom = styled.footer`
   background-color: #FFDD00;
   color: #FDFFFC;
   border-top: 3px solid #061826;
-  position: absolute;
+  position: fixed;
   bottom: 0;
 `;
 
