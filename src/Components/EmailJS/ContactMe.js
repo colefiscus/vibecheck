@@ -107,12 +107,20 @@ const Label = styled.label`
   font-family: 'Josefin Slab';
   font-weight: 100;
   font-style: italic;
-  font-size: ${16/14}rem;
+  font-size: ${18/14}rem;
 `;
 
 const Input = styled.input`
   margin: 8px 0px;
   width: 100%;
+  font-size: ${18/14}rem;
+  font-family: 'Telex';
+  font-style: italic;
+  color: hsl(0, 0%, 0%);
+
+  &::placeholder {
+    color: hsl(0, 0%, 60%);
+  }
 `;
 
 export default ContactMe;
