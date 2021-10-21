@@ -52,7 +52,7 @@ const ContactMe = () => {
         />
       </InputWrapper>
       <InputWrapper>
-        <label htmlFor="subject-select">Please choose a subject:</label>
+        <Label htmlFor="subject-select">Please choose a subject: </Label>
         <select 
           id="subject-select" 
           name="subject" 
@@ -94,6 +94,11 @@ const Form = styled.form`
 
 const InputWrapper = styled.div`
   
+`;
+
+const Label = styled.label`
+  font-family: 'Josefin Slab';
+  font-size: ${16/14}rem;
 `;
 
 const Input = styled.input`
