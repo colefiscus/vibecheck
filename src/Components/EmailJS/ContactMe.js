@@ -43,11 +43,16 @@ const ContactMe = () => {
       </InputWrapper>
       <InputWrapper>
         <label for="subject-select">Please choose a subject:</label>
-        <select id="subject-select" name="subjects">
-          <option>Idea</option>
-          <option>Bug</option>
-          <option>I have a job for you</option>
-          <option>I just want to say hi</option>
+        <select 
+          id="subject-select" 
+          name="subject" 
+          value={toSend.subject} 
+          onChange={handleChange}
+        >
+          <option value="Idea">Idea</option>
+          <option value="Bug">Bug</option>
+          <option value="Job Opportunity">Job Opportunity</option>
+          <option value="Friendly Hello">Friendly Hello</option>
         </select>
       </InputWrapper>
       <InputWrapper>
