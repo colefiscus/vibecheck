@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 const ContactMe = () => {
   const [toSend, setToSend] = useState({
+    subject: '',
     from_name: '',
     message: '',
     reply_to: ''
@@ -39,6 +40,15 @@ const ContactMe = () => {
           value={toSend.from_name}
           onChange={handleChange} 
         />
+      </InputWrapper>
+      <InputWrapper>
+        <label for="subject-select">Please choose a subject:</label>
+        <select id="subject-select" name="subjects">
+          <option>Idea</option>
+          <option>Bug</option>
+          <option>I have a job for you</option>
+          <option>I just want to say hi</option>
+        </select>
       </InputWrapper>
       <InputWrapper>
         <Input
