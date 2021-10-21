@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { send } from 'emailjs-com';
+import styled from 'styled-components';
 
 const ContactMe = () => {
   const [toSend, setToSend] = useState({
@@ -30,34 +31,50 @@ const ContactMe = () => {
   }
 
   return (
-    <form onSubmit={onSubmit}>
-      <input 
-        name="from_name"
-        placeholder="from name"
-        value={toSend.from_name}
-        onChange={handleChange} 
-      />
-      <input 
-        name="to_name"
-        placeholder="to name"
-        value={toSend.to_name}
-        onChange={handleChange} 
-      />
-      <input 
-        name="message"
-        placeholder="Your message"
-        value={toSend.message}
-        onChange={handleChange} 
-      />
-      <input 
-        name="reply_to"
-        placeholder="Your email"
-        value={toSend.reply_to}
-        onChange={handleChange} 
-      />
+    <Form onSubmit={onSubmit}>
+      <InputWrapper>
+        <input 
+          name="from_name"
+          placeholder="from name"
+          value={toSend.from_name}
+          onChange={handleChange} 
+        />
+      </InputWrapper>
+      <InputWrapper>
+        <input 
+          name="to_name"
+          placeholder="to name"
+          value={toSend.to_name}
+          onChange={handleChange} 
+        />
+      </InputWrapper>
+      <InputWrapper>
+        <input 
+          name="message"
+          placeholder="Your message"
+          value={toSend.message}
+          onChange={handleChange} 
+        />
+      </InputWrapper>
+      <InputWrapper>
+        <input 
+          name="reply_to"
+          placeholder="Your email"
+          value={toSend.reply_to}
+          onChange={handleChange} 
+        />
+      </InputWrapper>
       <button type="submit">Submit</button>
-    </form>
+    </Form>
   )
 }
+
+const Form = styled.form`
+
+`;
+
+const InputWrapper = styled.div`
+  border: 3px solid deeppink;
+`;
 
 export default ContactMe;
