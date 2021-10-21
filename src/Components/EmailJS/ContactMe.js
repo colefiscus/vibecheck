@@ -96,26 +96,31 @@ const ContactMe = () => {
 }
 
 const Form = styled.form`
-
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
-const InputWrapper = styled.div`
-  
-`;
 
 const Label = styled.label`
   font-family: 'Josefin Slab';
-  font-weight: 100;
-  font-style: italic;
   font-size: ${18/14}rem;
+  font-style: italic;
+`;
+
+const InputWrapper = styled.div`
+  display: flex;
+  width: 100%;
+  align-items: baseline;
+  justify-content: center;
 `;
 
 const Input = styled.input`
   margin: 8px 0px;
-  width: 100%;
+  // width: 100%;
   font-size: ${18/14}rem;
   font-family: 'Telex';
-  font-style: italic;
   color: hsl(0, 0%, 0%);
 
   &::placeholder {

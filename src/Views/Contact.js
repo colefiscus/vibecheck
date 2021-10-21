@@ -40,6 +40,10 @@ const Title = styled.h2`
 
 const SectionWrapper = styled.section`
   margin: 0px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 
 export default Contact;
