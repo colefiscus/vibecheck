@@ -55,7 +55,7 @@ const ContactMe = () => {
       </InputWrapper>
       <InputWrapper>
         <Label htmlFor="subject-select">Subject: </Label>
-        <select 
+        <Select 
           required
           id="subject-select" 
           name="subject" 
@@ -66,7 +66,7 @@ const ContactMe = () => {
           <option value="Bug">Bug</option>
           <option value="Job Opportunity">Job Opportunity</option>
           <option value="Friendly Hello">Friendly Hello</option>
-        </select>
+        </Select>
       </InputWrapper>
       <InputWrapper>
         <Label>Your Message: </Label>
@@ -96,7 +96,7 @@ const ContactMe = () => {
 }
 
 const Form = styled.form`
-  width: 70%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -107,6 +107,8 @@ const Label = styled.label`
   font-family: 'Josefin Slab';
   font-size: ${18/14}rem;
   font-style: italic;
+  flex: 1;
+  text-align: right;
 `;
 
 const InputWrapper = styled.div`
@@ -118,7 +120,21 @@ const InputWrapper = styled.div`
 
 const Input = styled.input`
   margin: 8px 0px;
-  // width: 100%;
+  flex: 4;
+  max-width: 400px;
+  font-size: ${18/14}rem;
+  font-family: 'Telex';
+  color: hsl(0, 0%, 0%);
+
+  &::placeholder {
+    color: hsl(0, 0%, 60%);
+  }
+`;
+
+const Select = styled.select`
+  margin: 8px 0px;
+  flex: 4;
+  max-width: 400px;
   font-size: ${18/14}rem;
   font-family: 'Telex';
   color: hsl(0, 0%, 0%);
