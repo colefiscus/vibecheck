@@ -7,7 +7,12 @@ const Contact = () => {
   return (
     <ContactWrapper>
       <SectionWrapper>
-        <h2>ABOUT</h2>
+        <Title>CONTACT</Title>
+        <p>Have a suggestion for VibeCheck? Send me your ideas!</p>
+        <ContactMe />
+      </SectionWrapper>
+      <SectionWrapper>
+        <Title>ABOUT</Title>
         <h3>Cole Fiscus</h3>
         <p>The developer is a major foodie.</p>
         <p>He wanted a better place to store his ratings of restaurants than his Notion page or Yelp.</p>
@@ -15,21 +20,22 @@ const Contact = () => {
         <p>He would give it a 6/7.</p>
         <p></p>
       </SectionWrapper>
-      <SectionWrapper>
-        <h2>CONTACT</h2>
-        <p>Have a suggestion for VibeCheck? Send me your ideas!</p>
-        <ContactMe />
-      </SectionWrapper>
     </ContactWrapper>
   )
 }
 
 const ContactWrapper = styled.main`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   font-family: 'Josefin Slab';
   font-weight: 200;
   font-size: ${22/14}rem;
+`;
+
+const Title = styled.h2`
+  font-family: 'Biryani';
+  font-weight: 400;
 `;
 
 const SectionWrapper = styled.section`
