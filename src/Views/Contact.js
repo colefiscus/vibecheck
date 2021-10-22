@@ -12,7 +12,7 @@ const Contact = () => {
     <ContactWrapper>
       <AboutWrapper style={{ "--alignment": "center" }}>
         <SocialWrapper>
-          <h2>About Cole Fiscus • • •</h2>
+          <h2>About Cole Fiscus |</h2>
           <ImageWrapper style={{ "--size": 32 + "px" }}>
             <Logo src={ghLogo} />
           </ImageWrapper>
@@ -38,6 +38,7 @@ const Contact = () => {
 
 const ContactWrapper = styled.main`
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   font-family: 'Josefin Slab';
@@ -49,9 +50,10 @@ const ContactWrapper = styled.main`
 
 const SocialWrapper = styled.div`
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid #061826;
   line-height: 0;
   margin-bottom: 25px;
 `;
