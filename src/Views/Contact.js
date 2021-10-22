@@ -8,7 +8,7 @@ const Contact = () => {
     <ContactWrapper>
       <SectionWrapper>
         <Title>CONTACT</Title>
-        <p>Have a suggestion for VibeCheck? <br />Send your ideas!</p>
+        <p>Have a suggestion for ViibCheck? <br />Send your ideas!</p>
         <ContactMe />
       </SectionWrapper>
       <SectionWrapper>
