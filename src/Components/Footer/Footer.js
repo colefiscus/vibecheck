@@ -30,6 +30,8 @@ const PageBottom = styled.footer`
   background-color: #FFDD00;
   color: #FDFFFC;
   border-top: 3px solid #061826;
+
+  // Remove this once content has been added to all views?
   position: fixed;
   bottom: 0;
 `;
