@@ -105,6 +105,9 @@ const Form = styled.form`
   align-items: center;
   font-family: 'Rokkitt';
   margin: 10px 0px;
+  padding: 30px;
+  padding-left: 10px;
+  border: 3px solid blue;
 `;
 
 
@@ -112,21 +115,18 @@ const Label = styled.label`
   font-family: 'Josefin Slab';
   font-size: ${18/14}rem;
   font-style: italic;
-  width: 300px;
+  width: max-content;
   margin-right: 8px;
-  flex: 1;
   text-align: right;
 `;
 
 const InputWrapper = styled.div`
   display: flex;
+  flex-direction: column;
   width: 100%;
-  align-items: baseline;
 `;
 
 const Input = styled.input`
-  margin: 8px 0px;
-  flex: 3;
   font-size: ${18/14}rem;
   font-family: inherit;
   font-weight: 700;
@@ -141,13 +141,11 @@ const Input = styled.input`
 
   &::placeholder {
     font-weight: 200;
-    color: hsl(0, 0%, 60%);
+    color: hsl(0deg, 0%, 70%);
   }
 `;
 
 const Select = styled.select`
-  margin: 8px 0px;
-  flex: 3;
   font-size: ${18/14}rem;
   font-family: inherit;
   font-weight: 700;
@@ -162,8 +160,6 @@ const Select = styled.select`
 `;
 
 const EmailArea = styled.textarea`
-  margin: 8px 0px;
-  flex: 3;
   font-size: ${18/14}rem;
   font-family: inherit;
   font-weight: 700;
@@ -180,7 +176,7 @@ const EmailArea = styled.textarea`
 
   &::placeholder {
     font-weight: 200;
-    color: hsl(0, 0%, 60%);
+    color: hsl(0, 0%, 70%);
   }
 `;
 

@@ -7,11 +7,6 @@ const Contact = () => {
   return (
     <ContactWrapper>
       <SectionWrapper>
-        <Title>CONTACT</Title>
-        <p>Have a suggestion for ViibCheck? <br />Send your ideas!</p>
-        <ContactMe />
-      </SectionWrapper>
-      <SectionWrapper>
         <Title>ABOUT</Title>
         <h3>Cole Fiscus</h3>
         <p>The developer is a major foodie.</p>
@@ -19,23 +14,27 @@ const Contact = () => {
         <p>He also thinks the rating system used here is simultaneously ridiculous and fantastic.</p>
         <p>He would give it a 6/7.</p>
       </SectionWrapper>
+      <SectionWrapper>
+        <Title>CONTACT</Title>
+        <p>Have a suggestion for ViibCheck? <br />Send your ideas!</p>
+        <ContactMe />
+      </SectionWrapper>
     </ContactWrapper>
   )
 }
 
 const ContactWrapper = styled.main`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   font-family: 'Josefin Slab';
   font-weight: 200;
   font-size: ${22/14}rem;
-  text-align: center;
   padding: 20px;
-  padding-bottom: 50px;
 `;
 
 const Title = styled.h2`
+  text-align: center;
   font-family: 'Biryani';
   font-weight: 400;
   margin-bottom: 20px;
@@ -44,12 +43,7 @@ const Title = styled.h2`
 const SectionWrapper = styled.section`
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  &:last-of-type {
-    // padding: 20px;
-  }
+  width: 50%;
 `;
 
 export default Contact;
