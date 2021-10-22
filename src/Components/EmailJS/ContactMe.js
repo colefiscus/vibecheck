@@ -48,7 +48,7 @@ const ContactMe = () => {
           required
           type="text"
           name="from_name"
-          placeholder="Terd Ferguson"
+          placeholder="Julia Child"
           value={toSend.from_name}
           onChange={handleChange} 
         />
@@ -76,7 +76,7 @@ const ContactMe = () => {
           rows="7"
           cols="30"
           name="message"
-          placeholder="RIP to the great Norm Macdonald"
+          placeholder="People who love to eat are always the best people."
           value={toSend.message}
           onChange={handleChange}
         />
@@ -87,7 +87,7 @@ const ContactMe = () => {
           required
           type="email"
           name="reply_to"
-          placeholder="podiatrist@mothmail.com"
+          placeholder="thejoyofcooking@yahoo.com"
           value={toSend.reply_to}
           onChange={handleChange} 
         />
