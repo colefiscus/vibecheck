@@ -105,6 +105,7 @@ const Form = styled.form`
   align-items: center;
   font-family: 'Rokkitt';
   margin: 10px 0px;
+  margin-top: 25px;
   padding: 16px;
   padding-top: 0px;
   background-color: hsl(193deg, 95%, 37%, 35%);

@@ -7,18 +7,13 @@ import ContactMe from "../Components/EmailJS/ContactMe";
 const Contact = () => {
   return (
     <ContactWrapper>
-      <SectionWrapper style={{ "--alignment": "center" }}>
-        <h3>Made by: Cole Fiscus</h3>
+      <AboutWrapper style={{ "--alignment": "center" }}>
+        <h3 style={{ "margin-bottom": 25 + "px"}}>About Cole Fiscus</h3>
         <ImageWrapper align="right">
           <Portrait src={selfPortrait} alt={"Portrait of the developer"} />
         </ImageWrapper>
-        <p>The developer is a major foodie.</p>
-        <p>He wanted a better place to store his ratings and reviews of restaurants than his Notion page or Yelp.</p>
-        <p>He also came up with the rating system. He wanted something that could factor in the multiple aspects of the dining-out experience.</p>
-        <p>The best restaurant that he's been to so far has been Sawyer, in Ballard, WA.</p>
-        <p>Sawyer got a final score of 5.5.</p>
-        <p>He hopes you like using ViibCheck. He appreciates that you're here. And he hopes to hear from you soon.</p>
-      </SectionWrapper>
+        <p>The developer is a major foodie. He wanted a better place to store his ratings and reviews of restaurants than his Notion page or Yelp. He also came up with the rating system. He wanted something that could factor in the multiple aspects of the dining-out experience. The best restaurant that he's been to so far has been Sawyer, in Ballard, WA. Sawyer got a final score of 5.5. He hopes you like using ViibCheck. He appreciates that you're here. And he hopes to hear from you soon.</p>
+      </AboutWrapper>
       <SectionWrapper style={{ "--alignment": "left" }}>
         <p>Have a suggestion for ViibCheck? Send your ideas!</p>
         <ContactMe />
@@ -34,14 +29,8 @@ const ContactWrapper = styled.main`
   font-family: 'Josefin Slab';
   font-weight: 200;
   font-size: ${22/14}rem;
-  padding: 20px;
-`;
-
-const Title = styled.h2`
-  text-align: center;
-  font-family: 'Biryani';
-  font-weight: 400;
-  margin-bottom: 20px;
+  gap: 50px;
+  padding: 30px;
 `;
 
 const ImageWrapper = styled.div`
@@ -49,6 +38,7 @@ const ImageWrapper = styled.div`
   margin: 16px;
   width: 300px;
   border-radius: 50%;
+  float: left;
 `;
 
 const Portrait = styled.img`
@@ -61,7 +51,12 @@ const SectionWrapper = styled.section`
   text-align: var(--alignment);
   flex-direction: column;
   flex: 1;
-  padding: 20px;
+`;
+
+const AboutWrapper = styled.div`
+  flex: 1;
+  text-align: var(--alignment);
+  line-height: 1.3;
 `;
 
 export default Contact;
