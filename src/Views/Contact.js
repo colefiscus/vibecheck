@@ -8,7 +8,6 @@ const Contact = () => {
   return (
     <ContactWrapper>
       <SectionWrapper style={{ "--alignment": "center" }}>
-        <Title>ABOUT</Title>
         <h3>Made by: Cole Fiscus</h3>
         <ImageWrapper align="right">
           <Portrait src={selfPortrait} alt={"Portrait of the developer"} />
@@ -21,7 +20,6 @@ const Contact = () => {
         <p>He hopes you like using ViibCheck. He appreciates that you're here. And he hopes to hear from you soon.</p>
       </SectionWrapper>
       <SectionWrapper style={{ "--alignment": "left" }}>
-        <Title>CONTACT</Title>
         <p>Have a suggestion for ViibCheck? Send your ideas!</p>
         <ContactMe />
       </SectionWrapper>
