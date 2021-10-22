@@ -3,6 +3,7 @@ import styled from "styled-components/macro";
 import selfPortrait from "../Images/cole.jpeg";
 import ghLogo from "../Images/github-logo.png";
 import liLogo from "../Images/linkedin-logo.png";
+import gmailLogo from "../Images/gmail-logo.png";
 
 import ContactMe from "../Components/EmailJS/ContactMe";
 
@@ -17,6 +18,9 @@ const Contact = () => {
           </ImageWrapper>
           <ImageWrapper style={{ "--size": 32 + "px" }}>
             <Logo src={liLogo} />
+          </ImageWrapper>
+          <ImageWrapper style={{ "--size": 32 + "px" }}>
+            <Logo src={gmailLogo} />
           </ImageWrapper>
         </SocialWrapper>
         <ImageWrapper style={{ "--size": 300 + "px" }}>
