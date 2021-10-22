@@ -190,7 +190,7 @@ const Button = styled.button`
   color: white;
 
   &:hover {
-    background-color: hsl(193deg, 95%, 37%, 35%);
+    background-color: hsl(193deg, 95%, 37%, 40%);
     color: black;
   }
 
