@@ -94,7 +94,7 @@ const ContactMe = () => {
           onChange={handleChange} 
         />
       </InputWrapper>
-      <button type="submit">Submit</button>
+      <Button type="submit">Submit</Button>
     </Form>
   )
 }
@@ -105,7 +105,7 @@ const Form = styled.form`
   align-items: center;
   font-family: 'Rokkitt';
   margin: 10px 0px;
-  padding: 8px 32px 32px 16px;
+  padding: 8px 32px 12px 16px;
   background-color: hsl(193deg, 95%, 37%, 35%);
   border-radius: 8px;
 `;
@@ -175,6 +175,27 @@ const EmailArea = styled.textarea`
   &::placeholder {
     font-weight: 200;
     color: hsl(0, 0%, 70%);
+  }
+`;
+
+const Button = styled.button`
+  padding: 16px 32px;
+  margin-top: 12px;
+  font-family: 'Josefin Slab';
+  font-size: ${18/14}rem;
+  border-radius: 4px;
+  border: 2px solid transparent;
+  outline-color: hsl(358deg, 65%, 46%);
+  background-color: #0591B8;
+  color: white;
+
+  &:hover {
+    background-color: hsl(193deg, 95%, 37%, 35%);
+    color: black;
+  }
+
+  &:focus {
+    outline-offset: 4px;
   }
 `;
 
