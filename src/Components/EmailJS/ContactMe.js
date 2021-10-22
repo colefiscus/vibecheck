@@ -105,8 +105,10 @@ const Form = styled.form`
   align-items: center;
   font-family: 'Rokkitt';
   margin: 10px 0px;
-  padding: 8px 32px 12px 16px;
+  padding: 16px;
+  padding-top: 0px;
   background-color: hsl(193deg, 95%, 37%, 35%);
+  border: 1px solid #061826;
   border-radius: 8px;
 `;
 
@@ -180,7 +182,7 @@ const EmailArea = styled.textarea`
 
 const Button = styled.button`
   padding: 16px 32px;
-  margin-top: 12px;
+  margin-top: 16px;
   font-family: 'Josefin Slab';
   font-size: ${18/14}rem;
   border-radius: 4px;

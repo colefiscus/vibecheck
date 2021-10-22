@@ -16,7 +16,7 @@ const Contact = () => {
       </SectionWrapper>
       <SectionWrapper>
         <Title>CONTACT</Title>
-        <p style={{ "margin-left": "8px"}}>Have a suggestion for ViibCheck? Send your ideas!</p>
+        <p>Have a suggestion for ViibCheck? Send your ideas!</p>
         <ContactMe />
       </SectionWrapper>
     </ContactWrapper>
@@ -43,7 +43,7 @@ const Title = styled.h2`
 const SectionWrapper = styled.section`
   display: flex;
   flex-direction: column;
-  width: 50%;
+  flex: 1;
 `;
 
 export default Contact;
