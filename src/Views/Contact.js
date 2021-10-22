@@ -29,7 +29,7 @@ const ContactWrapper = styled.main`
   font-family: 'Josefin Slab';
   font-weight: 200;
   font-size: ${22/14}rem;
-  gap: 50px;
+  gap: 40px;
   padding: 30px;
 `;
 
