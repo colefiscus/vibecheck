@@ -45,6 +45,7 @@ const ContactMe = () => {
       <InputWrapper>
         <Label>Your Name*</Label>
         <Input 
+          autoFocus
           required
           type="text"
           name="from_name"
@@ -101,7 +102,7 @@ const Form = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: 'Prozo Libre';
+  font-family: 'Rokkitt';
   margin: 10px 0px;
 `;
 
@@ -127,7 +128,7 @@ const Input = styled.input`
   flex: 3;
   font-size: ${18/14}rem;
   font-family: inherit;
-  font-weight: 600;
+  font-weight: 700;
   color: hsl(0, 0%, 0%);
   border-radius: 8px;
   padding: 12px 16px;
@@ -138,7 +139,7 @@ const Input = styled.input`
   }
 
   &::placeholder {
-    font-weight: 400;
+    font-weight: 200;
     color: hsl(0, 0%, 60%);
   }
 `;
@@ -148,7 +149,7 @@ const Select = styled.select`
   flex: 3;
   font-size: ${18/14}rem;
   font-family: inherit;
-  font-weight: 600;
+  font-weight: 700;
   color: hsl(0, 0%, 0%);
   border-radius: 8px;
   padding: 12px 16px;
@@ -164,7 +165,7 @@ const EmailArea = styled.textarea`
   flex: 3;
   font-size: ${18/14}rem;
   font-family: inherit;
-  font-weight: 600;
+  font-weight: 700;
   color: hsl(0, 0%, 0%);
   resize: none;
   overflow: auto;
@@ -177,7 +178,7 @@ const EmailArea = styled.textarea`
   }
 
   &::placeholder {
-    font-weight: 400;
+    font-weight: 200;
     color: hsl(0, 0%, 60%);
   }
 `;
