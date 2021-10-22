@@ -8,11 +8,11 @@ const Contact = () => {
   return (
     <ContactWrapper>
       <AboutWrapper style={{ "--alignment": "center" }}>
-        <h3 style={{ "margin-bottom": 25 + "px"}}>About Cole Fiscus</h3>
+        <h2 style={{ "marginBottom": 25 + "px", "borderBottom": 1 + "px solid"}}>About Cole Fiscus</h2>
         <ImageWrapper align="right">
           <Portrait src={selfPortrait} alt={"Portrait of the developer"} />
         </ImageWrapper>
-        <p>The developer is a major foodie. He wanted a better place to store his ratings and reviews of restaurants than his Notion page or Yelp. He also came up with the rating system. He wanted something that could factor in the multiple aspects of the dining-out experience. The best restaurant that he's been to so far has been Sawyer, in Ballard, WA. Sawyer got a final score of 5.5. He hopes you like using ViibCheck. He appreciates that you're here. And he hopes to hear from you soon.</p>
+        <p>The developer is a major foodie. He wanted a better place to store his ratings and reviews of restaurants than his Notion page or Yelp. He also came up with the rating system. He wanted something that could factor in the multiple aspects of the dining-out experience. The best restaurant that he's been to so far has been Sawyer, in Seattle, WA. Sawyer got a final score of 5.5. He hopes you like using ViibCheck. He appreciates that you're here. And he hopes to hear from you soon.</p>
       </AboutWrapper>
       <SectionWrapper style={{ "--alignment": "left" }}>
         <p>Have a suggestion for ViibCheck? Send your ideas!</p>
