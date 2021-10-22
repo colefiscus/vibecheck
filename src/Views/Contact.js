@@ -16,7 +16,7 @@ const Contact = () => {
       </SectionWrapper>
       <SectionWrapper>
         <Title>CONTACT</Title>
-        <p style={{ "margin-left": "8px"}}>Have a suggestion for ViibCheck? <br />Send your ideas!</p>
+        <p style={{ "margin-left": "8px"}}>Have a suggestion for ViibCheck? Send your ideas!</p>
         <ContactMe />
       </SectionWrapper>
     </ContactWrapper>

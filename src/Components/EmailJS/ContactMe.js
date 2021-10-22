@@ -75,7 +75,7 @@ const ContactMe = () => {
         <Label>Your Message*</Label>
         <EmailArea
           required
-          rows="7"
+          rows="5"
           cols="30"
           name="message"
           placeholder="People who love to eat are always the best people."
@@ -107,7 +107,6 @@ const Form = styled.form`
   margin: 10px 0px;
   padding: 8px 32px 32px 16px;
   background-color: hsl(193deg, 95%, 37%, 35%);
-  border: 3px solid #FFDD00;
   border-radius: 8px;
 `;
 

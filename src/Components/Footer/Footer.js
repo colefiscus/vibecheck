@@ -32,8 +32,8 @@ const PageBottom = styled.footer`
   border-top: 3px solid #061826;
 
   // Remove this once content has been added to all views?
-  position: fixed;
-  bottom: 0;
+  // position: fixed;
+  // bottom: 0;
 `;
 
 const LogoWrapper = styled.a`
