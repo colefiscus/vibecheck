@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components/macro";
 import selfPortrait from "../Images/cole.jpeg";
 import ghLogo from "../Images/github-logo.png";
+import liLogo from "../Images/linkedin-logo.png";
 
 import ContactMe from "../Components/EmailJS/ContactMe";
 
@@ -13,6 +14,9 @@ const Contact = () => {
           <h2>About Cole Fiscus • • •</h2>
           <ImageWrapper style={{ "--size": 32 + "px" }}>
             <Logo src={ghLogo} />
+          </ImageWrapper>
+          <ImageWrapper style={{ "--size": 32 + "px" }}>
+            <Logo src={liLogo} />
           </ImageWrapper>
         </SocialWrapper>
         <ImageWrapper style={{ "--size": 300 + "px" }}>
