@@ -63,8 +63,9 @@ const ContactMe = () => {
           value={toSend.subject} 
           onChange={handleChange}
         >
+          <option value="General Note">General Note</option>
           <option value="Idea">Idea</option>
-          <option value="Question">Question</option>
+          <option value="Question">Question/Help</option>
           <option value="Bug">Bug</option>
           <option value="Job Opportunity">Job Opportunity</option>
           <option value="Friendly Hello">Friendly Hello</option>
