@@ -105,9 +105,10 @@ const Form = styled.form`
   align-items: center;
   font-family: 'Rokkitt';
   margin: 10px 0px;
-  padding: 30px;
-  padding-left: 10px;
-  border: 3px solid blue;
+  padding: 8px 32px 32px 16px;
+  background-color: hsl(193deg, 95%, 37%, 35%);
+  border: 3px solid #FFDD00;
+  border-radius: 8px;
 `;
 
 
@@ -115,9 +116,7 @@ const Label = styled.label`
   font-family: 'Josefin Slab';
   font-size: ${18/14}rem;
   font-style: italic;
-  width: max-content;
-  margin-right: 8px;
-  text-align: right;
+  margin: 16px 0px 8px 16px;
 `;
 
 const InputWrapper = styled.div`
