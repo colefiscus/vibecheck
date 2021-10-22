@@ -63,6 +63,7 @@ const ContactMe = () => {
           onChange={handleChange}
         >
           <option value="Idea">Idea</option>
+          <option value="Question">Question</option>
           <option value="Bug">Bug</option>
           <option value="Job Opportunity">Job Opportunity</option>
           <option value="Friendly Hello">Friendly Hello</option>
