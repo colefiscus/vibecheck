@@ -1,20 +1,26 @@
 import React from "react";
 import styled from "styled-components/macro";
+import selfPortrait from "../Images/cole.jpeg";
 
 import ContactMe from "../Components/EmailJS/ContactMe";
 
 const Contact = () => {
   return (
     <ContactWrapper>
-      <SectionWrapper>
+      <SectionWrapper style={{ "--alignment": "center" }}>
         <Title>ABOUT</Title>
-        <h3>Cole Fiscus</h3>
+        <h3>Made by: Cole Fiscus</h3>
+        <ImageWrapper align="right">
+          <Portrait src={selfPortrait} alt={"Portrait of the developer"} />
+        </ImageWrapper>
         <p>The developer is a major foodie.</p>
-        <p>He wanted a better place to store his ratings of restaurants than his Notion page or Yelp.</p>
-        <p>He also thinks the rating system used here is simultaneously ridiculous and fantastic.</p>
-        <p>He would give it a 6/7.</p>
+        <p>He wanted a better place to store his ratings and reviews of restaurants than his Notion page or Yelp.</p>
+        <p>He also came up with the rating system. He wanted something that could factor in the multiple aspects of the dining-out experience.</p>
+        <p>The best restaurant that he's been to so far has been Sawyer, in Ballard, WA.</p>
+        <p>Sawyer got a final score of 5.5.</p>
+        <p>He hopes you like using ViibCheck. He appreciates that you're here. And he hopes to hear from you soon.</p>
       </SectionWrapper>
-      <SectionWrapper>
+      <SectionWrapper style={{ "--alignment": "left" }}>
         <Title>CONTACT</Title>
         <p>Have a suggestion for ViibCheck? Send your ideas!</p>
         <ContactMe />
@@ -40,10 +46,24 @@ const Title = styled.h2`
   margin-bottom: 20px;
 `;
 
+const ImageWrapper = styled.div`
+  align-self: center;
+  margin: 16px;
+  width: 300px;
+  border-radius: 50%;
+`;
+
+const Portrait = styled.img`
+  width: 100%;
+  border-radius: 50%;
+`;
+
 const SectionWrapper = styled.section`
   display: flex;
+  text-align: var(--alignment);
   flex-direction: column;
   flex: 1;
+  padding: 20px;
 `;
 
 export default Contact;
