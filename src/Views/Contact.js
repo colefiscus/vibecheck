@@ -13,13 +13,13 @@ const Contact = () => {
       <AboutWrapper style={{ "--alignment": "center" }}>
         <SocialWrapper>
           <h2>About Cole Fiscus |</h2>
-          <ImageWrapper style={{ "--size": 32 + "px" }} href="https://github.com/colefiscus" target="_blank">
+          <ImageWrapper style={{ "--size": 32 + "px" }} href="https://github.com/colefiscus/" target="_blank">
             <Logo src={ghLogo} />
           </ImageWrapper>
-          <ImageWrapper style={{ "--size": 32 + "px" }} href="https://linkedin.com/in/colefiscus" target="_blank">
+          <ImageWrapper style={{ "--size": 32 + "px" }} href="https://linkedin.com/in/colefiscus/" target="_blank">
             <Logo src={liLogo} />
           </ImageWrapper>
-          <ImageWrapper style={{ "--size": 32 + "px" }} href="https://github.com/colefiscus" target="_blank">
+          <ImageWrapper style={{ "--size": 32 + "px" }} href="mailto: coleiscoding@gmail.com?subject=Reaching out from Viibcheck&body=Dear Cole," target="_blank">
             <Logo src={gmailLogo} />
           </ImageWrapper>
         </SocialWrapper>
