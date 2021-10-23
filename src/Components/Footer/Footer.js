@@ -3,6 +3,8 @@ import styled from "styled-components/macro";
 import instagramLogo from '../../Images/instagram-logo.png';
 import ghLogo from '../../Images/github-logo.png';
 import smallLogo from '../../Images/small-logo-dark.png';
+import contactLogo from '../../Images/contact-logo.png';
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -10,6 +12,9 @@ const Footer = () => {
       <LogoWrapper>
         <Logo src={smallLogo} />
       </LogoWrapper>
+      <FooterLink to="/contact">
+        <Logo src={contactLogo} />
+      </FooterLink>
       <LogoWrapper href="https://www.instagram.com/negative2to7" target="_blank">
         <Logo src={instagramLogo} />
       </LogoWrapper>
@@ -45,6 +50,13 @@ const LogoWrapper = styled.a`
   &:first-of-type {
     margin-right: auto;
   }
+`;
+
+const FooterLink = styled(Link)`
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 const Logo = styled.img`

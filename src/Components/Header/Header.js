@@ -10,11 +10,11 @@ const Header = ({ isAuthenticated, isLoading }) => {
         <HeaderLink to="/">
           <Logo src={mainLogo} />
         </HeaderLink>
+        <HeaderLink to="/">
+          <Button>HOME</Button>
+        </HeaderLink>
         <HeaderLink to="faqs">
           <Button>FAQs</Button>
-        </HeaderLink>
-        <HeaderLink to="/contact">
-          <Button>CONTACT</Button>
         </HeaderLink>
         {isLoading && <h2>Loading.....</h2>}
         {!isAuthenticated &&  <HeaderLink to="/sign-in">
