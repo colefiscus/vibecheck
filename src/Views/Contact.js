@@ -13,13 +13,13 @@ const Contact = () => {
       <AboutWrapper style={{ "--alignment": "center" }}>
         <SocialWrapper>
           <h2>About Cole Fiscus |</h2>
-          <ImageWrapper style={{ "--size": 32 + "px" }}>
+          <ImageWrapper style={{ "--size": 32 + "px" }} href="https://github.com/colefiscus" target="_blank">
             <Logo src={ghLogo} />
           </ImageWrapper>
-          <ImageWrapper style={{ "--size": 32 + "px" }}>
+          <ImageWrapper style={{ "--size": 32 + "px" }} href="https://linkedin.com/in/colefiscus" target="_blank">
             <Logo src={liLogo} />
           </ImageWrapper>
-          <ImageWrapper style={{ "--size": 32 + "px" }}>
+          <ImageWrapper style={{ "--size": 32 + "px" }} href="https://github.com/colefiscus" target="_blank">
             <Logo src={gmailLogo} />
           </ImageWrapper>
         </SocialWrapper>
@@ -63,7 +63,7 @@ const Logo = styled.img`
   width: 100%;
 `;
 
-const ImageWrapper = styled.div`
+const ImageWrapper = styled.a`
   align-self: center;
   margin: 16px;
   width: var(--size);
