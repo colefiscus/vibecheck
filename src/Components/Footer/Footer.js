@@ -13,13 +13,16 @@ const Footer = () => {
         <Logo src={smallLogo} />
       </LogoWrapper>
       <FooterLink to="/contact">
-        <Logo src={contactLogo} />
+        <Logo src={contactLogo} 
+          style={{ "--radius": 16 + "px" }} />
       </FooterLink>
       <LogoWrapper href="https://www.instagram.com/negative2to7" target="_blank">
-        <Logo src={instagramLogo} />
+        <Logo src={instagramLogo} 
+          style={{ "--radius": 8 + "px" }}/>
       </LogoWrapper>
       <LogoWrapper href="https://github.com/colefiscus/vibecheck" target="_blank">
-        <Logo src={ghLogo} />
+        <Logo src={ghLogo} 
+          style={{ "--radius": 16 + "px" }}/>
       </LogoWrapper>
     </PageBottom>
   )
@@ -61,6 +64,11 @@ const FooterLink = styled(Link)`
 
 const Logo = styled.img`
   width: 100%;
+  border-radius: var(--radius);
+
+  &:hover {
+    background-color: white;
+  }
 `;
 
 export default Footer;
