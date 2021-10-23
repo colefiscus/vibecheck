@@ -41,6 +41,7 @@ const ContactWrapper = styled.main`
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
+  align-items: baseline;
   font-family: 'Josefin Slab';
   font-weight: 200;
   font-size: ${22/14}rem;
