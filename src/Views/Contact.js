@@ -19,7 +19,7 @@ const Contact = () => {
           <ImageWrapper style={{ "--size": 32 + "px" }} href="https://linkedin.com/in/colefiscus/" target="_blank">
             <Logo src={liLogo} />
           </ImageWrapper>
-          <ImageWrapper style={{ "--size": 32 + "px" }} href="mailto: coleiscoding@gmail.com?subject=Reaching out from Viibcheck&body=Dear Cole," target="_blank">
+          <ImageWrapper style={{ "--size": 32 + "px" }} href="mailto: coletfiscus@gmail.com?subject=Reaching out from Viibcheck&body=Dear Cole," target="_blank">
             <Logo src={gmailLogo} />
           </ImageWrapper>
         </SocialWrapper>
