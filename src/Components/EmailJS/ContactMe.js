@@ -136,6 +136,10 @@ const Input = styled.input`
   padding: 12px 16px;
   border: none;
 
+  &:hover::placeholder, &:focus::placeholder {
+    color: hsl(0deg, 0%, 50%);
+  }
+
   &:focus {
     outline: 1px dotted #212121;
   }
@@ -170,6 +174,10 @@ const EmailArea = styled.textarea`
   border-radius: 8px;
   padding: 12px 16px;
   border: none;
+
+  &:hover::placeholder, &:focus::placeholder {
+    color: hsl(0deg, 0%, 50%);
+  }
 
   &:focus {
     outline: 1px dotted #212121;
