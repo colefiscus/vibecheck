@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import styled from "styled-components/macro";
 
+import FAQ from "../Components/FAQs/FAQ";
+
 const Faqs = () => {
   const [faqs, setFaqs] = useState([
     {
@@ -29,7 +31,7 @@ const Faqs = () => {
     <FaqsWrapper>
       <Title>Frequently Asked Questions</Title>
       {faqs.map((faq, i) => {
-        
+        return <FAQ faq={faq} index={i} />
       })}
     </FaqsWrapper>
   )

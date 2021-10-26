@@ -10,3 +10,5 @@ const FAQ = ({ faq, index }) => {
     </div>
   )
 }
+
+export default FAQ;
