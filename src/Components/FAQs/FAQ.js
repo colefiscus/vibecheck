@@ -3,11 +3,12 @@ import styled from 'styled-components/macro';
 
 import downArrow from '../../Images/down-arrow.png'
 
-const FAQ = ({ faq, index }) => {
+const FAQ = ({ faq, index, toggleFAQ }) => {
   return (
     <FAQWrapper
-      className={"faq" + (faq.open ? "open" : "")}
+      className={"faq" + (faq.open ? " open" : "")}
       key={index}
+      onClick={() => toggleFAQ(index)}
     >
       <FAQQuestion className="faq-question">
         {faq.question}

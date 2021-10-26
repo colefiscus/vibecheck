@@ -27,12 +27,23 @@ const Faqs = () => {
     }
   ])
 
+  const toggleFAQ = (index) => {
+    setFaqs(faqs.map((faq, i) => {
+      if (i === index) {
+        faq.open = !faq.open;
+      } else {
+        faq.open = false;
+      }
+      return faq;
+    }))
+  }
+
   return (
     <FaqsWrapper>
       <Title>Frequently Asked Questions</Title>
       <div className="faqs">
         {faqs.map((faq, i) => {
-          return <FAQ faq={faq} index={i} />
+          return <FAQ faq={faq} index={i} toggleFAQ={toggleFAQ} />
         })}
       </div>
     </FaqsWrapper>
