@@ -30,7 +30,7 @@ const Header = ({ isAuthenticated, isLoading }) => {
 
 const HeaderWrapper = styled.header`
   background-color: #0591B8;
-  padding-right: 8px;
+  padding-right: 10px;
   display: flex;
   align-items: center;
   height: 60px;
@@ -40,6 +40,8 @@ const HeaderWrapper = styled.header`
 
 const HeaderLink = styled(NavLink)`
   align-self: flex-end;
+  text-decoration: none;
+  color: black;
 
   &:first-of-type {
     margin-right: auto;
@@ -54,13 +56,15 @@ const Logo = styled.img`
 
 const Button = styled.div`
   padding: 10px 12px 4px 12px;
+  font-size: ${12/14}rem;
   font-family: 'Biryani';
   font-weight: 200;
   line-height: 1;
   flex-shrink: 0;
   background-color: #FDFFFC;
-  border-radius: 8px 8px 0px 0px;
+  border: 1px solid #061826;
   border-bottom: none;
+  border-radius: 8px 8px 0px 0px;
   align-self: flex-end;
   cursor: pointer;
 
