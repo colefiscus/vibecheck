@@ -6,7 +6,7 @@ import downArrow from '../../Images/down-arrow.png'
 const FAQ = ({ faq, index, toggleFAQ }) => {
   return (
     <FAQWrapper
-      className={"faq" + (faq.open ? " open" : "")}
+      open={(faq.open ? true : false)}
       key={index}
       onClick={() => toggleFAQ(index)}
     >
@@ -26,6 +26,10 @@ const FAQWrapper = styled.div`
   margin: 20px auto;
   border-radius: 8px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+
+  margin-bottom: ${
+    props => props.open===true ? "15px" : "80px"
+  };
 `;
 
 const FAQQuestion = styled.div`
