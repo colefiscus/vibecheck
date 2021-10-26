@@ -52,7 +52,7 @@ const Logo = styled.img`
   width: 100%;
 `;
 
-const Button = styled.button`
+const Button = styled.div`
   padding: 10px 12px 4px 12px;
   font-family: 'Biryani';
   font-weight: 200;
