@@ -6,7 +6,12 @@ const FAQ = ({ faq, index }) => {
       className={"open" + (faq.open ? "open" : "")}
       key={index}
     >
-      {faq.question}
+      <div className="faq-question">
+        {faq.question}
+      </div>
+      <div className="faq-answer">
+        {faq.answer}
+      </div>
     </div>
   )
 }

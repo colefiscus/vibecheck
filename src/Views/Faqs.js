@@ -22,7 +22,7 @@ const Faqs = () => {
     },
     {
       question: "Where can I change my scale settings?",
-      answer: "You can change them in your profile",
+      answer: "You can change them in your profile.",
       open: false
     }
   ])
