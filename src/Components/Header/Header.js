@@ -63,6 +63,11 @@ const Button = styled.button`
   border-bottom: none;
   align-self: flex-end;
   cursor: pointer;
+
+  &:hover {
+    transform: translate(0px, -3px) scale(1.2);
+
+  }
 `;
 
 export default Header;
