@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components/macro";
 
 const Faqs = () => {
-  const {faqs, setFaqs} = setState([
+  const [faqs, setFaqs] = useState([
     {
       question: "How does this all work?",
       answer: "You judge a recent dining-out experience based on four factors: the food, the service you received, the vibes / setting of the place, and the value you thought you got for what you paid. Viibcheck will calculate a score based on how important you deemed each one of the factors to your overall experience.",
@@ -24,11 +24,13 @@ const Faqs = () => {
       open: false
     }
   ])
-  
+
   return (
     <FaqsWrapper>
       <Title>Frequently Asked Questions</Title>
-      
+      {faqs.map((faq, i) => {
+        
+      })}
     </FaqsWrapper>
   )
 }
