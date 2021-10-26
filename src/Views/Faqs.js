@@ -30,14 +30,20 @@ const Faqs = () => {
   return (
     <FaqsWrapper>
       <Title>Frequently Asked Questions</Title>
-      {faqs.map((faq, i) => {
-        return <FAQ faq={faq} index={i} />
-      })}
+      <div className="faqs">
+        {faqs.map((faq, i) => {
+          return <FAQ faq={faq} index={i} />
+        })}
+      </div>
     </FaqsWrapper>
   )
 }
 
 const FaqsWrapper = styled.main`
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: lightblue;
   display: flex;
   flex-direction: column;
   justify-content: center;

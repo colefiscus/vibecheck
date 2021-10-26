@@ -9,7 +9,7 @@ import ContactMe from "../Components/EmailJS/ContactMe";
 
 const Contact = () => {
   return (
-    <ContactWrapper>
+    <ContactWrapper className="oogiee-boogie">
       <AboutWrapper style={{ "--alignment": "center" }}>
         <SocialWrapper>
           <h2>About Cole Fiscus |</h2>
