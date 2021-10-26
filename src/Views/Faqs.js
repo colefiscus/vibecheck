@@ -8,7 +8,7 @@ const Faqs = () => {
     {
       question: "How does this all work?",
       answer: "You judge a recent dining-out experience based on four factors: the food, the service you received, the vibes / setting of the place, and the value you thought you got for what you paid. Viibcheck will calculate a score based on how important you deemed each one of the factors to your overall experience.",
-      open: true
+      open: false
     },
     {
       question: "The rating scale...why?",
