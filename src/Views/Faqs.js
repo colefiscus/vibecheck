@@ -60,7 +60,7 @@ const MainWrapper = styled.main`
 
 const Title = styled.h1`
   font-family: 'Biryani';
-  font-size: ${18/14}rem;
+  font-size: ${22/14}rem;
   margin-bottom: 20px;
 `;
 

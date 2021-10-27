@@ -31,12 +31,15 @@ const FAQWrapper = styled.div`
   border-radius: 8px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   background-color: hsl(193deg, 95%, 37%, 35%);
+  text-align: center;
 `;
 
-const FAQQuestion = styled.div`
+const FAQQuestion = styled.p`
+  font-family: 'Biryani';
+  font-weight: 200;
   position: relative;
-  font-size: 20px;
-  padding-right: 80px;
+  font-size: ${18/14}rem;
+  padding: 0px 8px;
   transition: all 0.6s ease-in-out;
 
   margin-bottom: ${props => props.open ? "30px" : "0px"};
@@ -61,13 +64,17 @@ const FAQQuestion = styled.div`
   }
 `;
 
-const FAQAnswer = styled.div`
+const FAQAnswer = styled.p`
+  font-family: 'Josefin Slab';
+  font-size: ${16/14}rem;
   opacity: 0;
   max-height: 0;
   overflow-y: hidden;
   transition: all 0.4s ease-out;
   background-color: #FFF;
+  border-radius: 8px;
 
+  padding: ${props => props.open ? "25px 5px" : "0px"};
   max-height: ${props => props.open ? "1000px" : "0px"};
   opacity: ${props => props.open ? "1" : "0px"};
 `;
