@@ -36,7 +36,7 @@ const FAQQuestion = styled.div`
   position: relative;
   font-size: 20px;
   padding-right: 80px;
-  transition: all 0.8s ease-out;
+  transition: all 0.6s ease-in-out;
 
   margin-bottom: ${props => props.open ? "30px" : "0px"};
 
@@ -64,7 +64,7 @@ const FAQAnswer = styled.div`
   opacity: 0;
   max-height: 0;
   overflow-y: hidden;
-  transition: all 0.5s ease-out;
+  transition: all 0.4s ease-out;
 
   max-height: ${props => props.open ? "1000px" : "0px"};
   opacity: ${props => props.open ? "1" : "0px"};
