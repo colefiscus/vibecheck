@@ -27,13 +27,20 @@ const FAQ = ({ faq, index, toggleFAQ }) => {
 }
 
 const FAQWrapper = styled.div`
-  padding: 15px;
-  margin: 15px;
+  padding: 20px;
+  margin: 5px;
   border-radius: 8px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   text-align: center;
   transition: all 0.6s ease-in-out;
   background-color: ${props => props.open ? "#FFF" : "hsl(193deg, 95%, 37%, 35%)"};
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+  &:last-of-type {
+    margin-bottom: 0;
+  }
   `;
   
   const FAQQuestion = styled.p`
@@ -42,10 +49,11 @@ const FAQWrapper = styled.div`
   position: relative;
   font-size: ${18/14}rem;
   padding: 0px 8px;
+  margin-top: 4px;
   transition: all 0.6s ease-in-out;
   cursor: default;
   
-  margin-bottom: ${props => props.open ? "30px" : "0px"};
+  margin-bottom: ${props => props.open ? "10px" : "0px"};
 
   &::after {
     content: '';
