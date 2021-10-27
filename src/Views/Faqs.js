@@ -6,6 +6,11 @@ import FAQ from "../Components/FAQs/FAQ";
 const Faqs = () => {
   const [faqs, setFaqs] = useState([
     {
+      question: "Who made this site?",
+      answer: "A guy named Cole Fiscus did! You can find out more about him on the Info page.",
+      open: false
+    },
+    {
       question: "How does this all work?",
       answer: "You judge a recent dining-out experience based on four factors: the food, the service you received, the vibes / setting of the place, and the value you thought you got for what you paid. Viibcheck will calculate a score based on how important you deemed each one of the factors to your overall experience.",
       open: false
