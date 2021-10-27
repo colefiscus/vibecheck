@@ -10,7 +10,10 @@ const FAQ = ({ faq, index, toggleFAQ }) => {
       key={index}
       onClick={() => toggleFAQ(index)}
     >
-      <FAQQuestion className="faq-question">
+      <FAQQuestion 
+        className="faq-question"
+        open={(faq.open ? true : false)}
+      >
         {faq.question}
       </FAQQuestion>
       <FAQAnswer className="faq-answer">
@@ -21,21 +24,23 @@ const FAQ = ({ faq, index, toggleFAQ }) => {
 }
 
 const FAQWrapper = styled.div`
-  background-color: #FFF;
+  background-color: purple;
   padding: 15px;
-  margin: 20px auto;
+  margin: 15px;
   border-radius: 8px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 
-  margin-bottom: ${
-    props => props.open===true ? "15px" : "80px"
-  };
+  margin-bottom: ${props => props.open ? "30px" : "0px"};
+  transition: all 0.4s ease;
 `;
 
 const FAQQuestion = styled.div`
   position: relative;
   font-size: 20px;
   padding-right: 80px;
+  
+  margin-bottom: ${props => props.open ? "30px" : "0px"};
+  transition: all 0.4s ease;
 
   &::after {
     content: '';

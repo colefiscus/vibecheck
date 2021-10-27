@@ -39,21 +39,18 @@ const Faqs = () => {
   }
 
   return (
-    <FaqsWrapper>
+    <MainWrapper>
       <Title>Frequently Asked Questions</Title>
-      <div className="faqs">
+      <FAQSWrapper className="faqs">
         {faqs.map((faq, i) => {
           return <FAQ faq={faq} index={i} toggleFAQ={toggleFAQ} />
         })}
-      </div>
-    </FaqsWrapper>
+      </FAQSWrapper>
+    </MainWrapper>
   )
 }
 
-const FaqsWrapper = styled.main`
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
+const MainWrapper = styled.main`
   background-color: lightblue;
   display: flex;
   flex-direction: column;
@@ -65,6 +62,15 @@ const FaqsWrapper = styled.main`
 const Title = styled.h1`
   font-family: 'Biryani';
   font-size: ${18/14}rem;
+  margin-bottom: 20px;
+`;
+
+const FAQSWrapper = styled.div`
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 15px;
+  background-color: green;
 `;
 
 export default Faqs;
