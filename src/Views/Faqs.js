@@ -55,13 +55,13 @@ const MainWrapper = styled.main`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 30px;
+  padding: 35px;
 `;
 
 const Title = styled.h1`
   font-family: 'Biryani';
   font-size: ${22/14}rem;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 `;
 
 const FAQSWrapper = styled.div`

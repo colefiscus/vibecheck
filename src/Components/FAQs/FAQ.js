@@ -28,7 +28,7 @@ const FAQ = ({ faq, index, toggleFAQ }) => {
 
 const FAQWrapper = styled.div`
   padding: 20px;
-  margin: 5px;
+  margin: 15px;
   border-radius: 8px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   text-align: center;
