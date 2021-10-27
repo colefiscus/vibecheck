@@ -8,6 +8,7 @@ const FAQ = ({ faq, index, toggleFAQ }) => {
     <FAQWrapper
       key={index}
       onClick={() => toggleFAQ(index)}
+      open={(faq.open ? true : false)}
     >
       <FAQQuestion 
         className="faq-question"
@@ -30,18 +31,20 @@ const FAQWrapper = styled.div`
   margin: 15px;
   border-radius: 8px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  background-color: hsl(193deg, 95%, 37%, 35%);
   text-align: center;
-`;
-
-const FAQQuestion = styled.p`
+  transition: all 0.6s ease-in-out;
+  background-color: ${props => props.open ? "#FFF" : "hsl(193deg, 95%, 37%, 35%)"};
+  `;
+  
+  const FAQQuestion = styled.p`
   font-family: 'Biryani';
   font-weight: 200;
   position: relative;
   font-size: ${18/14}rem;
   padding: 0px 8px;
   transition: all 0.6s ease-in-out;
-
+  cursor: default;
+  
   margin-bottom: ${props => props.open ? "30px" : "0px"};
 
   &::after {
