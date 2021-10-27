@@ -6,7 +6,6 @@ import downArrow from '../../Images/down-arrow.png'
 const FAQ = ({ faq, index, toggleFAQ }) => {
   return (
     <FAQWrapper
-      open={(faq.open ? true : false)}
       key={index}
       onClick={() => toggleFAQ(index)}
     >
@@ -16,7 +15,10 @@ const FAQ = ({ faq, index, toggleFAQ }) => {
       >
         {faq.question}
       </FAQQuestion>
-      <FAQAnswer className="faq-answer">
+      <FAQAnswer 
+        className="faq-answer"
+        open={(faq.open ? true : false)}
+      >
         {faq.answer}
       </FAQAnswer>
     </FAQWrapper>
@@ -24,23 +26,19 @@ const FAQ = ({ faq, index, toggleFAQ }) => {
 }
 
 const FAQWrapper = styled.div`
-  background-color: purple;
   padding: 15px;
   margin: 15px;
   border-radius: 8px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-
-  margin-bottom: ${props => props.open ? "30px" : "0px"};
-  transition: all 0.4s ease;
 `;
 
 const FAQQuestion = styled.div`
   position: relative;
   font-size: 20px;
   padding-right: 80px;
-  
+  transition: all 0.8s ease-out;
+
   margin-bottom: ${props => props.open ? "30px" : "0px"};
-  transition: all 0.4s ease;
 
   &::after {
     content: '';
@@ -56,7 +54,9 @@ const FAQQuestion = styled.div`
     background-size: contain;
     background-repeat: no-repeat;
 
-    transition: all 0.4s ease;
+    transition: all 0.6s linear;
+
+    // transform: ${props => props.open ? "translateY(-50%)" : "rotate(180deg)"};
   }
 `;
 
@@ -64,7 +64,10 @@ const FAQAnswer = styled.div`
   opacity: 0;
   max-height: 0;
   overflow-y: hidden;
-  transition: all 0.4s ease;
+  transition: all 0.5s ease-out;
+
+  max-height: ${props => props.open ? "1000px" : "0px"};
+  opacity: ${props => props.open ? "1" : "0px"};
 `;
 
 export default FAQ;
