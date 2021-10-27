@@ -34,6 +34,7 @@ const FAQWrapper = styled.div`
   text-align: center;
   transition: all 0.6s ease-in-out;
   background-color: ${props => props.open ? "#FFF" : "hsl(193deg, 95%, 37%, 35%)"};
+  border: ${props => props.open ? "1px solid" : "none"};
 
   &:first-of-type {
     margin-top: 0;
