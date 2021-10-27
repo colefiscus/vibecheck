@@ -30,6 +30,7 @@ const FAQWrapper = styled.div`
   margin: 15px;
   border-radius: 8px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  background-color: hsl(193deg, 95%, 37%, 35%);
 `;
 
 const FAQQuestion = styled.div`
@@ -65,6 +66,7 @@ const FAQAnswer = styled.div`
   max-height: 0;
   overflow-y: hidden;
   transition: all 0.4s ease-out;
+  background-color: #FFF;
 
   max-height: ${props => props.open ? "1000px" : "0px"};
   opacity: ${props => props.open ? "1" : "0px"};

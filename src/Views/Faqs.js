@@ -51,7 +51,6 @@ const Faqs = () => {
 }
 
 const MainWrapper = styled.main`
-  background-color: lightblue;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -70,7 +69,6 @@ const FAQSWrapper = styled.div`
   max-width: 800px;
   margin: 0 auto;
   padding: 15px;
-  background-color: green;
 `;
 
 export default Faqs;
