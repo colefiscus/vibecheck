@@ -5,9 +5,6 @@ import { Link } from 'react-router-dom';
 import downArrow from '../../Images/down-arrow.png'
 
 const FAQ = ({ faq, index, toggleFAQ }) => {
-
-  const link = <Link to="/contact">Info page</Link>
-
   return (
     <FAQWrapper
       key={index}
@@ -25,9 +22,9 @@ const FAQ = ({ faq, index, toggleFAQ }) => {
         open={(faq.open ? true : false)}
       >
         {!faq.answer.includes("Cole Fiscus") ? faq.answer : 
-        <p>A guy named Cole Fiscus did! You can find out more about him on the
-          <Link to='/contact'> Info page.</Link>
-        </p>}
+        <>A guy named Cole Fiscus did! You can find out more about him on the
+          <ContactLink to='/contact'> Info page.</ContactLink>
+        </>}
       </FAQAnswer>  
     </FAQWrapper>
   )
@@ -99,7 +96,8 @@ const FAQAnswer = styled.p`
 `;
 
  const ContactLink = styled(Link)`
-  
+  text-decoration: none;
+  color: blue;
 `;
 
 export default FAQ;

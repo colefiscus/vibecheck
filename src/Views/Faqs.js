@@ -48,7 +48,7 @@ const Faqs = () => {
       <Title>Frequently Asked Questions</Title>
       <FAQSWrapper className="faqs">
         {faqs.map((faq, i) => {
-            return <FAQ faq={faq} index={i} toggleFAQ={toggleFAQ} />
+            return <FAQ faq={faq} key={i} index={i} toggleFAQ={toggleFAQ} />
         })}
       </FAQSWrapper>
     </MainWrapper>
