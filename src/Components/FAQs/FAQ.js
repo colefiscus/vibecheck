@@ -68,6 +68,7 @@ const FAQWrapper = styled.div`
     transform: translateY(-50%);
     width: 30px;
     height: 30px;
+    cursor: pointer;
 
     background-image: url(${downArrow});
     background-position: center;
