@@ -38,7 +38,7 @@ const FAQWrapper = styled.div`
   text-align: center;
   transition: all 0.6s ease-in-out;
   background-color: ${props => props.open ? "#FFF" : "hsl(193deg, 95%, 37%, 35%)"};
-  border: ${props => props.open ? "1px solid" : "none"};
+  border: 1px solid;
 
   &:first-of-type {
     margin-top: 0;
@@ -74,9 +74,9 @@ const FAQWrapper = styled.div`
     background-size: contain;
     background-repeat: no-repeat;
 
-    transition: all 0.6s linear;
+    transition: all 0.6s ease-out;
 
-    // transform: ${props => props.open ? "translateY(-50%)" : "rotate(180deg)"};
+    transform: ${props => props.open ? "rotateX(180deg) translate(0px, 14px)" : "translateY(-50%)"};
   }
 `;
 
