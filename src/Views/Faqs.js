@@ -7,7 +7,7 @@ const Faqs = () => {
   const [faqs, setFaqs] = useState([
     {
       question: "Who made this site?",
-      answer: "A guy named Cole Fiscus did! You can find out more about him on the Info page.",
+      answer: `A guy named Cole Fiscus did! You can find out more about him on the Info page.`,
       open: false
     },
     {
@@ -48,7 +48,7 @@ const Faqs = () => {
       <Title>Frequently Asked Questions</Title>
       <FAQSWrapper className="faqs">
         {faqs.map((faq, i) => {
-          return <FAQ faq={faq} index={i} toggleFAQ={toggleFAQ} />
+            return <FAQ faq={faq} index={i} toggleFAQ={toggleFAQ} />
         })}
       </FAQSWrapper>
     </MainWrapper>

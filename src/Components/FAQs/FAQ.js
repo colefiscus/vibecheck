@@ -1,9 +1,13 @@
 import React from 'react';
 import styled from 'styled-components/macro';
+import { Link } from 'react-router-dom';
 
 import downArrow from '../../Images/down-arrow.png'
 
 const FAQ = ({ faq, index, toggleFAQ }) => {
+
+  const link = <Link to="/contact">Info page</Link>
+
   return (
     <FAQWrapper
       key={index}
@@ -20,8 +24,11 @@ const FAQ = ({ faq, index, toggleFAQ }) => {
         className="faq-answer"
         open={(faq.open ? true : false)}
       >
-        {faq.answer}
-      </FAQAnswer>
+        {!faq.answer.includes("Cole Fiscus") ? faq.answer : 
+        <p>A guy named Cole Fiscus did! You can find out more about him on the
+          <Link to='/contact'> Info page.</Link>
+        </p>}
+      </FAQAnswer>  
     </FAQWrapper>
   )
 }
@@ -89,6 +96,10 @@ const FAQAnswer = styled.p`
   padding: ${props => props.open ? "25px 5px" : "0px"};
   max-height: ${props => props.open ? "1000px" : "0px"};
   opacity: ${props => props.open ? "1" : "0px"};
+`;
+
+ const ContactLink = styled(Link)`
+  
 `;
 
 export default FAQ;
