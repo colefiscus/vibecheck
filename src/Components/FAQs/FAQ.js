@@ -56,7 +56,7 @@ const FAQWrapper = styled.div`
   padding: 0px 8px;
   margin-top: 4px;
   transition: all 0.6s ease-in-out;
-  cursor: default;
+  cursor: pointer;
   
   margin-bottom: ${props => props.open ? "10px" : "0px"};
 
