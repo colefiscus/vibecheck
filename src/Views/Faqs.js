@@ -64,7 +64,6 @@ const MainWrapper = styled.main`
 `;
 
 const Title = styled.h1`
-  text-decoration: underline;
   font-family: 'Biryani';
   font-size: ${22/14}rem;
   margin-bottom: 15px;
