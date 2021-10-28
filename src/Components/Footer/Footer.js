@@ -17,11 +17,11 @@ const Footer = () => {
         <Logo src={contactLogo} 
           style={{ "--radius": 16 + "px", "--color": "white" }} />
       </FooterLink>
-      <LogoWrapper href="https://www.instagram.com/negative2to7" target="_blank">
+      <LogoWrapper href="https://www.instagram.com/viibcheck/" target="_blank">
         <Logo src={instagramLogo} 
           style={{ "--radius": 8 + "px", "--color": "white" }}/>
       </LogoWrapper>
-      <LogoWrapper href="https://github.com/colefiscus/vibecheck" target="_blank">
+      <LogoWrapper href="https://github.com/colefiscus/vibecheck/" target="_blank">
         <Logo src={ghLogo} 
           style={{ "--radius": 16 + "px", "--color": "white" }}/>
       </LogoWrapper>
