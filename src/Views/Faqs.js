@@ -35,6 +35,11 @@ const Faqs = () => {
       answer: "You may be able to put Viibcheck onto your phone as an app using your browser. Check your browser settings and look for an option to download the site to your phone. It should show up on your home screen for easy access!",
       open: false
     },
+    {
+      question: "How do I save my ratings?",
+      answer: "You'll have to make a profile.",
+      open: false
+    }
   ])
 
   const toggleFAQ = (index) => {
