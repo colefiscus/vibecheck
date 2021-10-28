@@ -29,7 +29,12 @@ const Faqs = () => {
       question: "Where can I change my scale settings?",
       answer: "You can change them in your profile.",
       open: false
-    }
+    },
+    {
+      question: "Is there an app?",
+      answer: "You may be able to put Viibcheck onto your phone as an app using your browser. Check your browser settings and look for an option to download the site to your phone. It should show up on your home screen for easy access!",
+      open: false
+    },
   ])
 
   const toggleFAQ = (index) => {
