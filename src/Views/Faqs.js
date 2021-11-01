@@ -21,7 +21,7 @@ const Faqs = () => {
       open: false
     },
     {
-      question: "Ok, but can you like just give me some examples or something?",
+      question: "Can you give me some examples?",
       answer: "A 7 should be reserved for the best experiences of your life - less than a handful of scores should receive a 7. A 5 is great! You loved it! It's uncommon, but not rare. A 3 is pretty average - you didn't love it, didn't hate it. A 1 is just bad. You did not enjoy it in the slightest. A 0 is actually awful, like something is wrong. And a -2 is an abhorrent insult to humanity, Gordon Ramsey couldn't help this score get better and it wouldn't even deserve it in the first place.",
       open: false
     },
