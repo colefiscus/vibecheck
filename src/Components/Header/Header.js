@@ -34,7 +34,7 @@ const HeaderWrapper = styled.header`
   display: flex;
   align-items: center;
   height: 80px;
-  gap: 2px;
+  gap: 4px;
   border-bottom: 3px solid #061826;
 `;
 
