@@ -58,13 +58,11 @@ const Button = styled.div`
   font-size: ${12/14}rem;
   font-family: 'Biryani';
   font-weight: 200;
-  line-height: 1;
   flex-shrink: 0;
   background-color: #FDFFFC;
   border: 1px solid #061826;
   border-bottom: none;
   border-radius: 6000px 6000px 1000px 1000px;
-  align-self: flex-end;
   cursor: pointer;
 
   &:hover {
