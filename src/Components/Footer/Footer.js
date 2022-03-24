@@ -31,7 +31,7 @@ const Footer = () => {
 
 const PageBottom = styled.footer`
   width: 100%;
-  height: 50px;
+  height: 8%;
   padding: 0px 8px;
   display: flex;
   gap: 8px;
@@ -39,7 +39,7 @@ const PageBottom = styled.footer`
   background-color: #FFDD00;
   color: #FDFFFC;
   border-top: 3px solid #061826;
-  position: absolute;
+  position: relative;
   bottom: 0;
 `;
 

@@ -10,7 +10,8 @@ const Home = () => {
 }
 
 const HomeWrapper = styled.main`
-  min-height: 100%;
+  min-height: 80%;
+  position: relative;
 `;
 
 export default Home;

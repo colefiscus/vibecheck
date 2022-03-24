@@ -32,11 +32,11 @@ const HeaderWrapper = styled.header`
   background-color: #0591B8;
   padding-right: 10px;
   display: flex;
-  height: 80px;
+  height: 12%;
   width: 100%;
   gap: 4px;
   border-bottom: 3px solid #061826;
-  position: absolute;
+  position: relative;
   top: 0;
 `;
 
