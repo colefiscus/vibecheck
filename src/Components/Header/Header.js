@@ -33,8 +33,11 @@ const HeaderWrapper = styled.header`
   padding-right: 10px;
   display: flex;
   height: 80px;
+  width: 100%;
   gap: 4px;
   border-bottom: 3px solid #061826;
+  position: absolute;
+  top: 0;
 `;
 
 const HeaderLink = styled(NavLink)`
