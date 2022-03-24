@@ -32,7 +32,6 @@ const HeaderWrapper = styled.header`
   background-color: #0591B8;
   padding-right: 10px;
   display: flex;
-  align-items: center;
   height: 80px;
   gap: 4px;
   border-bottom: 3px solid #061826;
@@ -55,7 +54,7 @@ const Logo = styled.img`
 `;
 
 const Button = styled.div`
-  padding: 10px 12px 4px 12px;
+  padding: 10px 16px 5px 16px;
   font-size: ${12/14}rem;
   font-family: 'Biryani';
   font-weight: 200;
@@ -64,7 +63,7 @@ const Button = styled.div`
   background-color: #FDFFFC;
   border: 1px solid #061826;
   border-bottom: none;
-  border-radius: 8px 8px 0px 0px;
+  border-radius: 6000px 6000px 1000px 1000px;
   align-self: flex-end;
   cursor: pointer;
 
