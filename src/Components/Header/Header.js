@@ -33,7 +33,7 @@ const HeaderWrapper = styled.header`
   padding-right: 10px;
   display: flex;
   align-items: center;
-  height: 60px;
+  height: 80px;
   gap: 2px;
   border-bottom: 3px solid #061826;
 `;
