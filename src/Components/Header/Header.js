@@ -69,8 +69,8 @@ const Button = styled.div`
   cursor: pointer;
 
   &:hover {
-    transform: translate(0px, -3px) scale(1.2);
-
+    background-color: #C1292E;
+    color: white;
   }
 `;
 
