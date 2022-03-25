@@ -23,7 +23,7 @@ const Footer = () => {
       </LogoWrapper>
       <LogoWrapper href="https://github.com/colefiscus/vibecheck/" target="_blank">
         <Logo src={ghLogo} 
-          style={{ "--radius": 16 + "px", "--color": "#ffffff",  }}/>
+          style={{ "--radius": 16 + "px", "--color": "#ffffff" }}/>
       </LogoWrapper>
     </PageBottom>
   )
