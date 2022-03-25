@@ -5,7 +5,7 @@ const Home = ({ user, isAuthenticated }) => {
 
   return (
     <HomeWrapper>
-      <h1>Welcome {user.given_name}!</h1>
+      <WelcomeHero>Welcome {user.given_name}!</WelcomeHero>
     </HomeWrapper>
   )
 }
@@ -13,6 +13,13 @@ const Home = ({ user, isAuthenticated }) => {
 const HomeWrapper = styled.main`
   min-height: 78%;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+const WelcomeHero = styled.h1`
+  font-size: ${36/14}rem;
 `;
 
 export default Home;
