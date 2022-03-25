@@ -36,7 +36,7 @@ const HeaderWrapper = styled.header`
   width: 100%;
   gap: 4px;
   border-bottom: 3px solid #061826;
-  position: relative;
+  position: sticky;
   top: 0;
 `;
 
