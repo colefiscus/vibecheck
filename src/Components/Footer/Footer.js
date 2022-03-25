@@ -15,7 +15,7 @@ const Footer = () => {
       </LogoWrapper>
       <FooterLink to="/contact">
         <Logo src={contactLogo} 
-          style={{ "--radius": 16 + "px", "--color": "#C1292E" }} />
+          style={{ "--radius": 16 + "px", "--color": "#0591B8" }} />
       </FooterLink>
       <LogoWrapper href="https://www.instagram.com/viibcheck/" target="_blank">
         <Logo src={instagramLogo} 
@@ -23,7 +23,7 @@ const Footer = () => {
       </LogoWrapper>
       <LogoWrapper href="https://github.com/colefiscus/vibecheck/" target="_blank">
         <Logo src={ghLogo} 
-          style={{ "--radius": 16 + "px", "--color": "#C1292E",  }}/>
+          style={{ "--radius": 16 + "px", "--color": "#ffffff",  }}/>
       </LogoWrapper>
     </PageBottom>
   )
