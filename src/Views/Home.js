@@ -1,10 +1,11 @@
 import React from "react";
 import styled from "styled-components/macro";
 
-const Home = () => {
+const Home = ({ user, isAuthenticated }) => {
+
   return (
     <HomeWrapper>
-      <h1>THIS IS HOME</h1>
+      <h1>Welcome {user.given_name}!</h1>
     </HomeWrapper>
   )
 }
