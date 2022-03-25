@@ -71,7 +71,7 @@ const MainWrapper = styled.main`
   justify-content: center;
   align-items: center;
   padding: 35px;
-  min-height: 80%;
+  min-height: 78%;
 `;
 
 const Title = styled.h1`

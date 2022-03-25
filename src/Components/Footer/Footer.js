@@ -44,7 +44,7 @@ const PageBottom = styled.footer`
 `;
 
 const LogoWrapper = styled.a`
-  width: 30px;
+  width: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -55,7 +55,7 @@ const LogoWrapper = styled.a`
 `;
 
 const FooterLink = styled(Link)`
-  width: 30px;
+  width: 40px;
   display: flex;
   align-items: center;
   justify-content: center;

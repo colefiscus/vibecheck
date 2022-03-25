@@ -21,7 +21,7 @@ const MainWrapper = styled.main`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 80%;
+  min-height: 78%;
 `;
 
 const ImageWrapper = styled.div`
