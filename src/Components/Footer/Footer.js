@@ -19,7 +19,7 @@ const Footer = () => {
       </FooterLink>
       <LogoWrapper href="https://www.instagram.com/viibcheck/" target="_blank">
         <Logo src={instagramLogo} 
-          style={{ "--radius": 8 + "px", "--color": "linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)" }}/>
+          style={{ "--radius": 9 + "px", "--color": "linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)" }}/>
       </LogoWrapper>
       <LogoWrapper href="https://github.com/colefiscus/vibecheck/" target="_blank">
         <Logo src={ghLogo} 
@@ -31,7 +31,7 @@ const Footer = () => {
 
 const PageBottom = styled.footer`
   width: 100%;
-  height: 8%;
+  height: 10%;
   padding: 0px 8px;
   display: flex;
   gap: 8px;
@@ -64,6 +64,8 @@ const FooterLink = styled(Link)`
 const Logo = styled.img`
   width: 100%;
   border-radius: var(--radius);
+  overflow: hidden;
+
 
   &:hover {
     background: var(--color);
