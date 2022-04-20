@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components/macro";
 
+import NewRestForm from "../Components/NewRestForm/NewRestForm";
+
 const Home = ({ user, isAuthenticated }) => {
 
   const welcomeMsg = user ? `Hi ${user.given_name}!` : "Welcome!"
@@ -8,6 +10,7 @@ const Home = ({ user, isAuthenticated }) => {
   return (
     <HomeWrapper>
       <WelcomeHero>{welcomeMsg}</WelcomeHero>
+      <NewRestForm></NewRestForm>
     </HomeWrapper>
   )
 }

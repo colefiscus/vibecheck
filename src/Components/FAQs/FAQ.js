@@ -9,7 +9,7 @@ const FAQ = ({ faq, index, toggleFAQ }) => {
     <FAQWrapper
       key={index}
       open={(faq.open ? true : false)}
-      >
+    >
       <FAQQuestion 
         onClick={() => toggleFAQ(index)}
         className="faq-question"
