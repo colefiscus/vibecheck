@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components/macro";
+import data from "../../Data/sampleData";
 
 import NewRestForm from "../Components/NewRestForm/NewRestForm";
 
