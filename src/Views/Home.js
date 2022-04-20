@@ -3,9 +3,11 @@ import styled from "styled-components/macro";
 
 const Home = ({ user, isAuthenticated }) => {
 
+  const welcomeMsg = user ? `Hi ${user.given_name}!` : "Welcome!"
+
   return (
     <HomeWrapper>
-      <WelcomeHero>Welcome {user.given_name}!</WelcomeHero>
+      <WelcomeHero>{welcomeMsg}</WelcomeHero>
     </HomeWrapper>
   )
 }

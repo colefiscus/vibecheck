@@ -8,17 +8,22 @@ const LoginButton = () => {
   return <AuthLoginButton onClick={() => loginWithRedirect()}>SIGN IN</AuthLoginButton>
 }
 
-const AuthLoginButton = styled.button`
-  padding: 10px 12px 4px 12px;
+const AuthLoginButton = styled.div`
+  padding: 10px 16px 5px 16px;
+  font-size: ${12/14}rem;
   font-family: 'Biryani';
   font-weight: 200;
-  line-height: 1;
   flex-shrink: 0;
   background-color: #FDFFFC;
-  border-radius: 8px 8px 0px 0px;
+  border: 1px solid #061826;
   border-bottom: none;
-  align-self: flex-end;
+  border-radius: 6000px 6000px 1000px 1000px;
   cursor: pointer;
+
+  &:hover {
+    background-color: #C1292E;
+    color: white;
+  }
 `;
 
 export default LoginButton;
