@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components/macro";
-import data from "../../Data/sampleData";
+import data from "../Data/sampleData"
 
 import NewRestForm from "../Components/NewRestForm/NewRestForm";
+import RatingBox from "../Components/RatingBox/RatingBox";
 
 const Home = ({ user, isAuthenticated }) => {
 
@@ -12,6 +13,7 @@ const Home = ({ user, isAuthenticated }) => {
     <HomeWrapper>
       <WelcomeHero>{welcomeMsg}</WelcomeHero>
       <NewRestForm></NewRestForm>
+      <RatingBox data={data}></RatingBox>
     </HomeWrapper>
   )
 }
