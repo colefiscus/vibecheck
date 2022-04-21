@@ -5,13 +5,13 @@ import Rating from "../Rating/Rating";
 const RatingBox = ({ data }) => {
 
   const ratings = data.map(ratingData => {
-    
+    return <Rating ratingData={ratingData} />
   })
 
   return (
     <section>
       <div>Herlo</div>
-      <Rating />
+      {ratings}   
     </section>
   )
 }
