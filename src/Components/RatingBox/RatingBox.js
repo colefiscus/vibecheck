@@ -10,7 +10,6 @@ const RatingBox = ({ data }) => {
 
   return (
     <section>
-      <div>Herlo</div>
       {ratings}   
     </section>
   )
