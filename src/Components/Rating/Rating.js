@@ -5,6 +5,11 @@ const Rating = ({ ratingData }) => {
 
   const info = ratingData.restaurantInfo;
   const userRatings = ratingData.userRatings;
+  const userRatingValues = Object.values(ratingData.userRatings);
+
+  const averageRating = userRatingValues.reduce((acc, rating) => {
+    return acc += rating
+  }, 0) / 4;
 
   return (
     <RatingWrapper>
@@ -17,7 +22,7 @@ const Rating = ({ ratingData }) => {
       <p>{userRatings.vibeRating}</p>
       <p>{userRatings.serviceRating}</p>
       <p>{userRatings.valueRating}</p>
-      <h3>Average Score: AVG</h3>
+      <h3>Average Score: {averageRating}</h3>
     </RatingWrapper>
   )
 }
