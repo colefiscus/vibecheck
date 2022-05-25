@@ -5,8 +5,8 @@ const Rating = ({ ratingData }) => {
 
   const info = ratingData.restaurantInfo;
   const userRatings = ratingData.userRatings;
-  const userRatingValues = Object.values(ratingData.userRatings);
 
+  const userRatingValues = Object.values(ratingData.userRatings);
   const averageRating = userRatingValues.reduce((acc, rating) => {
     return acc += rating
   }, 0) / 4;
@@ -16,12 +16,12 @@ const Rating = ({ ratingData }) => {
       <RestName>{info.name}</RestName>
       <p>{info.address}</p>
       <p>{info.dateVisited}</p>
-      <p>{info.website}</p>
+      <a href={info.website} target="_blank" rel="noreferrer">{info.website}</a>
       <p>FOOD: {userRatings.foodRating}</p>
       <p>VIBE: {userRatings.vibeRating}</p>
       <p>SERVICE: {userRatings.serviceRating}</p>
       <p>VALUE: {userRatings.valueRating}</p>
-      <h3>Average Score: {averageRating}</h3>
+      <h3>AVERAGE: {averageRating}</h3>
     </RatingWrapper>
   )
 }
