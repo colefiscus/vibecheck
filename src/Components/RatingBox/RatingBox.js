@@ -16,8 +16,10 @@ const RatingBox = ({ data }) => {
 }
 
 const RatingsWrapper = styled.section`
-  /* display: grid;
-  grid-template-columns: 33% 33% 33%; */
+  width: 67%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
 `;
 
 export default RatingBox;
