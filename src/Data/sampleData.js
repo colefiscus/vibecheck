@@ -84,6 +84,23 @@ const data = [
       valueRating: 4
     },
   },
+  {
+    id: 6,
+    restaurantInfo: {
+      name: "Safta",
+      address: "3330 Brighton Blvd #201, Denver, CO 80216",
+      city: "Denver",
+      state: "CO",
+      website: "https://www.eatwithsafta.com",
+      dateVisited: "05/09/2022",
+    },
+    userRatings: {
+      foodRating: 7,
+      vibeRating: 5.5,
+      serviceRating: 5,
+      valueRating: 6
+    },
+  },
 ]
 
 export default data;
