@@ -12,7 +12,7 @@ const Contact = () => {
     <ContactWrapper className="oogiee-boogie">
       <AboutWrapper style={{ "--alignment": "center" }}>
         <SocialWrapper>
-          <h2>About Cole Fiscus |</h2>
+          <h2>Cole Fiscus |</h2>
           <ImageWrapper style={{ "--size": 32 + "px" }} href="https://github.com/colefiscus/" target="_blank">
             <Logo src={ghLogo} />
           </ImageWrapper>
