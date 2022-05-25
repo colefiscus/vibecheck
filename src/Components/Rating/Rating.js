@@ -17,11 +17,10 @@ const Rating = ({ ratingData }) => {
       <p>{info.address}</p>
       <p>{info.dateVisited}</p>
       <p>{info.website}</p>
-      <h3>The Vibecheck</h3>
-      <p>{userRatings.foodRating}</p>
-      <p>{userRatings.vibeRating}</p>
-      <p>{userRatings.serviceRating}</p>
-      <p>{userRatings.valueRating}</p>
+      <p>FOOD: {userRatings.foodRating}</p>
+      <p>VIBE: {userRatings.vibeRating}</p>
+      <p>SERVICE: {userRatings.serviceRating}</p>
+      <p>VALUE: {userRatings.valueRating}</p>
       <h3>Average Score: {averageRating}</h3>
     </RatingWrapper>
   )
