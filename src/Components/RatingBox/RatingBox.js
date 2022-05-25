@@ -9,17 +9,18 @@ const RatingBox = ({ data }) => {
   })
 
   return (
-    <RatingsWrapper>
+    <RatingsBoxWrapper>
       {ratings}   
-    </RatingsWrapper>
+    </RatingsBoxWrapper>
   )
 }
 
-const RatingsWrapper = styled.section`
-  width: 67%;
+const RatingsBoxWrapper = styled.section`
+  margin: 24px;
+  width: 85%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
 `;
 
 export default RatingBox;

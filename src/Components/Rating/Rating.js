@@ -8,7 +8,7 @@ const Rating = ({ ratingData }) => {
 
   return (
     <RatingWrapper>
-      <p>{info.name}</p>
+      <RestName>{info.name}</RestName>
       <p>{info.address}</p>
       <p>{info.dateVisited}</p>
       <p>{info.website}</p>
@@ -24,6 +24,11 @@ const Rating = ({ ratingData }) => {
 
 const RatingWrapper = styled.article`
   border: 1px solid red;
+  text-align: center;
+`;
+
+const RestName = styled.h2`
+  font-size: 1.5rem;
 `;
 
 export default Rating;
