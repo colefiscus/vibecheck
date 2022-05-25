@@ -9,10 +9,15 @@ const RatingBox = ({ data }) => {
   })
 
   return (
-    <section>
+    <RatingsWrapper>
       {ratings}   
-    </section>
+    </RatingsWrapper>
   )
 }
+
+const RatingsWrapper = styled.section`
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+`;
 
 export default RatingBox;
