@@ -5,7 +5,7 @@ import Rating from "../Rating/Rating";
 const RatingBox = ({ data }) => {
 
   const ratings = data.map(ratingData => {
-    return <Rating ratingData={ratingData} />
+    return <Rating ratingData={ratingData} key={ratingData.id} />
   })
 
   return (
