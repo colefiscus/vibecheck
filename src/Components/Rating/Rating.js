@@ -27,14 +27,14 @@ const Rating = ({ ratingData }) => {
 }
 
 const RatingWrapper = styled.article`
-  border: 5px outset #0591B8;
+  border: 6px groove #0591B8;
   border-radius: 5px;
   text-align: center;
   padding: 16px;
 `;
 
 const RestName = styled.h2`
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 `;
 
 export default Rating;
