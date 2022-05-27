@@ -27,8 +27,9 @@ const HomeWrapper = styled.main`
 `;
 
 const WelcomeHero = styled.h1`
+  font-family: 'Biryani';
   font-size: ${36/14}rem;
-  margin: 1rem;
+  margin: 1.5rem 0px 1rem 0px;
 `;
 
 export default Home;

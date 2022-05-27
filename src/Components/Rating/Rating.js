@@ -42,7 +42,6 @@ const RatingWrapper = styled.article`
   font-family: 'Rokkitt';
   font-size: 1.25rem;
   box-shadow: 1px 3px 5px hsl(0deg 0% 0% / 0.5);
-;
   `;
 
 const RestName = styled.h2`
