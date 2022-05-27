@@ -16,7 +16,7 @@ const Rating = ({ ratingData }) => {
       <RestName>{info.name.toUpperCase()}</RestName>
       <p>{info.address}</p>
       <p>{info.dateVisited}</p>
-      <a href={info.website} target="_blank" rel="noreferrer">{info.website}</a>
+      <RestWebsite href={info.website} target="_blank" rel="noreferrer">{info.website}</RestWebsite>
       <p>FOOD: {userRatings.foodRating}</p>
       <p>VIBE: {userRatings.vibeRating}</p>
       <p>SERVICE: {userRatings.serviceRating}</p>
@@ -38,6 +38,10 @@ const RatingWrapper = styled.article`
 const RestName = styled.h2`
   font-size: 1.75rem;
   font-family: 'Biryani';
+`;
+
+const RestWebsite = styled.a`
+  text-decoration: none;
 `;
 
 export default Rating;
