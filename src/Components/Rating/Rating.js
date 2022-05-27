@@ -21,10 +21,15 @@ const Rating = ({ ratingData }) => {
 
   return (
     <RatingWrapper>
-      <RestHeader style={{"text-decoration": "underline"}}>
+      <RestLink 
+        href={info.website}
+        target="_blank" 
+        rel="noreferrer" 
+        style={{"text-decoration": "underline"}}
+      >
         {info.name.toUpperCase()}
-      </RestHeader>
-      <RestHeader style={{"margin-bottom": "1rem", "font-weight": "200"}}>
+      </RestLink>
+      <RestHeader style={{"font-weight": "200"}}>
         {info.dateVisited}
       </RestHeader>
       <RestLink 
@@ -35,13 +40,13 @@ const Rating = ({ ratingData }) => {
         {info.address}
       </RestLink>
       <br/>
-      <RestLink 
+      {/* <RestLink 
         href={info.website} 
         target="_blank" 
         rel="noreferrer"
       >
         {makeWebsitePresentable(info.website)}
-      </RestLink>
+      </RestLink> */}
       <p>FOOD: {userRatings.foodRating}</p>
       <p>VIBE: {userRatings.vibeRating}</p>
       <p>SERVICE: {userRatings.serviceRating}</p>
