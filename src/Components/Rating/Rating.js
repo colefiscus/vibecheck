@@ -39,15 +39,22 @@ const RatingWrapper = styled.article`
   border: 6px groove #0591B8;
   border-radius: 5px;
   text-align: center;
-  padding: 16px;
+  padding: 1rem;
   font-family: 'Rokkitt';
+  /* font-family: 'Josefin Slab'; */
   font-size: 1.25rem;
+  font-weight: 200;
   box-shadow: 1px 3px 5px hsl(0deg 0% 0% / 0.5);
   `;
 
 const RestName = styled.h2`
   font-size: 1.75rem;
   font-family: 'Biryani';
+  font-family: 'Josefin Slab';
+  font-family: 'Rokkitt';
+  font-weight: 400;
+  text-decoration: underline;
+  margin-bottom: 1rem;
 `;
 
 const RestWebsite = styled.a`
