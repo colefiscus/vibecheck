@@ -35,6 +35,7 @@ const Rating = ({ ratingData }) => {
 }
 
 const RatingWrapper = styled.article`
+  background-color: white;
   border: 6px groove #0591B8;
   border-radius: 5px;
   text-align: center;
