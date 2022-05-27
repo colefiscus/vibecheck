@@ -22,7 +22,7 @@ const Rating = ({ ratingData }) => {
   return (
     <RatingWrapper>
       <RestName>{info.name.toUpperCase()}</RestName>
-      <p>{info.address}</p>
+      <RestWebsite href="http://maps.google.com/?q=info.address" target="_blank" rel="noreferrer">{info.address}</RestWebsite>
       <p>{info.dateVisited}</p>
       <RestWebsite href={info.website} target="_blank" rel="noreferrer">{makeWebsitePresentable(info.website)}</RestWebsite>
       <p>FOOD: {userRatings.foodRating}</p>
@@ -36,7 +36,7 @@ const Rating = ({ ratingData }) => {
 
 const RatingWrapper = styled.article`
   background-color: white;
-  border: 6px groove #0591B8;
+  border: 6px ridge #0591B8;
   border-radius: 5px;
   text-align: center;
   padding: 1rem;
