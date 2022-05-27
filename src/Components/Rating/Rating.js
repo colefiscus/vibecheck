@@ -11,12 +11,20 @@ const Rating = ({ ratingData }) => {
     return acc += rating
   }, 0) / 4;
 
+  const makeWebsitePresentable = (website) => {
+    if (website.includes("https")) {
+      return website.slice(8)
+    } else if (website.includes("http")) {
+      return website.slice(7)
+    }
+  }
+
   return (
     <RatingWrapper>
       <RestName>{info.name.toUpperCase()}</RestName>
       <p>{info.address}</p>
       <p>{info.dateVisited}</p>
-      <RestWebsite href={info.website} target="_blank" rel="noreferrer">{info.website}</RestWebsite>
+      <RestWebsite href={info.website} target="_blank" rel="noreferrer">{makeWebsitePresentable(info.website)}</RestWebsite>
       <p>FOOD: {userRatings.foodRating}</p>
       <p>VIBE: {userRatings.vibeRating}</p>
       <p>SERVICE: {userRatings.serviceRating}</p>
