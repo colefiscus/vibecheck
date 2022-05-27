@@ -21,12 +21,12 @@ const Rating = ({ ratingData }) => {
 
   return (
     <RatingWrapper>
-      <RestName style={{"text-decoration": "underline"}}>
+      <RestHeader style={{"text-decoration": "underline"}}>
         {info.name.toUpperCase()}
-      </RestName>
-      <RestName style={{"margin-bottom": "1rem"}}>
+      </RestHeader>
+      <RestHeader style={{"margin-bottom": "1rem", "font-weight": "200"}}>
         {info.dateVisited}
-      </RestName>
+      </RestHeader>
       <RestLink 
         href={`http://maps.google.com/?q=${info.address}`} 
         target="_blank" 
@@ -63,7 +63,7 @@ const RatingWrapper = styled.article`
   box-shadow: 1px 3px 5px hsl(0deg 0% 0% / 0.5);
   `;
 
-const RestName = styled.h2`
+const RestHeader = styled.h2`
   font-family: 'Rokkitt';
   font-size: 1.75rem;
   font-weight: 400;
