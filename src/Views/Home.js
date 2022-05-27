@@ -5,9 +5,9 @@ import data from "../Data/sampleData"
 import NewRestForm from "../Components/NewRestForm/NewRestForm";
 import RatingBox from "../Components/RatingBox/RatingBox";
 
-const Home = ({ user, isAuthenticated }) => {
+const Home = ({ user }) => {
 
-  const welcomeMsg = user ? `Hi ${user.given_name}!` : "Welcome!"
+  const welcomeMsg = user ? `Welcome back, ${user.given_name}!` : "Welcome!"
 
   return (
     <HomeWrapper>
@@ -28,6 +28,7 @@ const HomeWrapper = styled.main`
 
 const WelcomeHero = styled.h1`
   font-size: ${36/14}rem;
+  margin: 1rem;
 `;
 
 export default Home;

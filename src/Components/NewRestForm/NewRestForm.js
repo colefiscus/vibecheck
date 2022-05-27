@@ -15,6 +15,6 @@ const NewRestForm = () => {
       </form>
     </>
   )
-}
+};
 
 export default NewRestForm;
