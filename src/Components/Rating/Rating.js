@@ -13,7 +13,7 @@ const Rating = ({ ratingData }) => {
 
   return (
     <RatingWrapper>
-      <RestName>{info.name}</RestName>
+      <RestName>{info.name.toUpperCase()}</RestName>
       <p>{info.address}</p>
       <p>{info.dateVisited}</p>
       <a href={info.website} target="_blank" rel="noreferrer">{info.website}</a>
@@ -31,10 +31,13 @@ const RatingWrapper = styled.article`
   border-radius: 5px;
   text-align: center;
   padding: 16px;
-`;
+  font-family: 'Rokkitt';
+  font-size: 1.25rem;
+  `;
 
 const RestName = styled.h2`
   font-size: 1.75rem;
+  font-family: 'Biryani';
 `;
 
 export default Rating;
