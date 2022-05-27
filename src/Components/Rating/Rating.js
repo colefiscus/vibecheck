@@ -48,7 +48,7 @@ const Rating = ({ ratingData }) => {
 const RatingWrapper = styled.article`
   background-color: white;
   border: 6px ridge #0591B8;
-  border-radius: 5px;
+  border-radius: 15px;
   text-align: center;
   padding: 1rem;
   font-family: 'Josefin Slab';
