@@ -21,20 +21,26 @@ const Rating = ({ ratingData }) => {
 
   return (
     <RatingWrapper>
-      <RestName>{info.name.toUpperCase()}</RestName>
-      <p>{info.dateVisited}</p>
+      <RestName style={{"text-decoration": "underline"}}>
+        {info.name.toUpperCase()}
+      </RestName>
+      <RestName style={{"margin-bottom": "1rem"}}>
+        {info.dateVisited}
+      </RestName>
       <RestLink 
         href={`http://maps.google.com/?q=${info.address}`} 
         target="_blank" 
-        rel="noreferrer">
-          {info.address}
+        rel="noreferrer"
+      >
+        {info.address}
       </RestLink>
       <br/>
       <RestLink 
         href={info.website} 
         target="_blank" 
-        rel="noreferrer">
-          {makeWebsitePresentable(info.website)}
+        rel="noreferrer"
+      >
+        {makeWebsitePresentable(info.website)}
       </RestLink>
       <p>FOOD: {userRatings.foodRating}</p>
       <p>VIBE: {userRatings.vibeRating}</p>
@@ -61,8 +67,7 @@ const RestName = styled.h2`
   font-family: 'Rokkitt';
   font-size: 1.75rem;
   font-weight: 400;
-  text-decoration: underline;
-  margin-bottom: 1rem;
+  line-height: 0.85;
 `;
 
 const RestLink = styled.a`
