@@ -7,7 +7,7 @@ const data = [
       city: "Spokane",
       state: "WA",
       website: "http://eataloha.com",
-      dateVisited: "04/01/2016",
+      dateVisited: "04/01/16",
     },
     userRatings: {
       foodRating: 5,
@@ -24,7 +24,7 @@ const data = [
       city: "Seattle",
       state: "WA",
       website: "http://sawyerseattle.com",
-      dateVisited: "07/12/2021",
+      dateVisited: "07/12/21",
     },
     userRatings: {
       foodRating: 7,
@@ -41,7 +41,7 @@ const data = [
       city: "Erie",
       state: "CO",
       website: "https://www.eatatbirdhouse.com",
-      dateVisited: "04/16/2022",
+      dateVisited: "04/16/22",
     },
     userRatings: {
       foodRating: 6,
@@ -58,7 +58,7 @@ const data = [
       city: "Denver",
       state: "CO",
       website: "https://myneighborfelix.com",
-      dateVisited: "03/22/2022",
+      dateVisited: "03/22/22",
     },
     userRatings: {
       foodRating: 2.5,
@@ -75,7 +75,7 @@ const data = [
       city: "Boulder",
       state: "CO",
       website: "http://www.riverandwoodsboulder.com",
-      dateVisited: "02/13/2022",
+      dateVisited: "02/13/22",
     },
     userRatings: {
       foodRating: 4.5,
@@ -92,7 +92,7 @@ const data = [
       city: "Denver",
       state: "CO",
       website: "https://www.eatwithsafta.com",
-      dateVisited: "05/09/2022",
+      dateVisited: "05/09/22",
     },
     userRatings: {
       foodRating: 7,

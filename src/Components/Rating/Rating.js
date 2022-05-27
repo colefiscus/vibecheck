@@ -40,13 +40,6 @@ const Rating = ({ ratingData }) => {
         {info.address}
       </RestLink>
       <br/>
-      {/* <RestLink 
-        href={info.website} 
-        target="_blank" 
-        rel="noreferrer"
-      >
-        {makeWebsitePresentable(info.website)}
-      </RestLink> */}
       <p>Food: {userRatings.foodRating}</p>
       <p>Vibe: {userRatings.vibeRating}</p>
       <p>Service: {userRatings.serviceRating}</p>
