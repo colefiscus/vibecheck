@@ -6,7 +6,7 @@ const data = [
       address: "1724 N Monroe St, Spokane, WA 99205",
       city: "Spokane",
       state: "WA",
-      website: "http://eataloha.com/",
+      website: "http://eataloha.com",
       dateVisited: "04/01/2016",
     },
     userRatings: {
@@ -23,7 +23,7 @@ const data = [
       address: "5309 22nd Ave, Seattle, WA 98107",
       city: "Seattle",
       state: "WA",
-      website: "http://sawyerseattle.com/",
+      website: "http://sawyerseattle.com",
       dateVisited: "07/12/2021",
     },
     userRatings: {
@@ -74,7 +74,7 @@ const data = [
       address: "2328 Pearl St, Boulder, CO 80302",
       city: "Boulder",
       state: "CO",
-      website: "http://www.riverandwoodsboulder.com/",
+      website: "http://www.riverandwoodsboulder.com",
       dateVisited: "02/13/2022",
     },
     userRatings: {
