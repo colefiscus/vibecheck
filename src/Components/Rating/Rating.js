@@ -27,8 +27,10 @@ const Rating = ({ ratingData }) => {
 }
 
 const RatingWrapper = styled.article`
-  border: 1px solid red;
+  border: 5px outset #0591B8;
+  border-radius: 5px;
   text-align: center;
+  padding: 16px;
 `;
 
 const RestName = styled.h2`
