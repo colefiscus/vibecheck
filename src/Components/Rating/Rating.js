@@ -22,7 +22,7 @@ const Rating = ({ ratingData }) => {
   return (
     <RatingWrapper>
       <RestName>{info.name.toUpperCase()}</RestName>
-      <RestWebsite href="http://maps.google.com/?q=info.address" target="_blank" rel="noreferrer">{info.address}</RestWebsite>
+      <RestWebsite href={`http://maps.google.com/?q=${info.address}`} target="_blank" rel="noreferrer">{info.address}</RestWebsite>
       <p>{info.dateVisited}</p>
       <RestWebsite href={info.website} target="_blank" rel="noreferrer">{makeWebsitePresentable(info.website)}</RestWebsite>
       <p>FOOD: {userRatings.foodRating}</p>
