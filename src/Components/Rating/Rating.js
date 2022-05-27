@@ -47,10 +47,10 @@ const Rating = ({ ratingData }) => {
       >
         {makeWebsitePresentable(info.website)}
       </RestLink> */}
-      <p>FOOD: {userRatings.foodRating}</p>
-      <p>VIBE: {userRatings.vibeRating}</p>
-      <p>SERVICE: {userRatings.serviceRating}</p>
-      <p>VALUE: {userRatings.valueRating}</p>
+      <p>Food: {userRatings.foodRating}</p>
+      <p>Vibe: {userRatings.vibeRating}</p>
+      <p>Service: {userRatings.serviceRating}</p>
+      <p>Value: {userRatings.valueRating}</p>
       <h3>AVERAGE: {averageRating}</h3>
     </RatingWrapper>
   )
