@@ -51,6 +51,10 @@ const RestName = styled.h2`
 
 const RestWebsite = styled.a`
   text-decoration: none;
+
+  &:visited {
+    color: blue;
+  }
 `;
 
 export default Rating;
