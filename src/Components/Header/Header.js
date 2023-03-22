@@ -66,7 +66,7 @@ const Button = styled.div`
   background-color: #FDFFFC;
   border: 1px solid #061826;
   border-bottom: none;
-  border-radius: 6000px 6000px 1000px 1000px;
+  border-radius: 8000px 8000px 1000px 1000px;
   cursor: pointer;
 
   &:hover {
